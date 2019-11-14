@@ -1,0 +1,14 @@
+{
+  "name": "@pansy/is-null",
+  "version": "1.0.0",
+  "description": "判断当前值是否为空",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "pansy"
+  },
+  "devDependencies": {
+    "@walrus/pansy": "^0.2.0",
+    "typescript": "^3.7.2"
+  }
+}
