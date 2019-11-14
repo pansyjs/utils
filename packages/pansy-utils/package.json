@@ -1,6 +1,6 @@
 {
   "name": "@pansy/utils",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "汇总包",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -14,7 +14,7 @@
     "build": "pansy"
   },
   "dependencies": {
-    "@pansy/is-null": "^1.0.0"
+    "@pansy/is-null": "^0.0.1"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0",
