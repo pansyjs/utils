@@ -10,12 +10,17 @@
     "bootstrap": "yarn && lerna bootstrap",
     "clean": "lerna clean",
     "test": "walrus test",
-    "prerelease": "lerna run build",
+    "build": "lerna run build",
+    "update-readme": "ts-node scripts/update-readme.ts",
+    "prerelease": "yarn build",
     "release": "yarn --pure-lockfile && walrus release"
   },
   "devDependencies": {
     "@walrus/cli": "^0.3.1",
     "@walrus/plugin-lerna-release": "^1.0.3",
+    "fs-extra": "^8.1.0",
+    "globby": "^10.0.1",
+    "ts-node": "^8.5.0",
     "typescript": "^3.7.2"
   },
   "workspaces": [

@@ -1,7 +1,7 @@
 {
-  "name": "@pansy/is-null",
+  "name": "@pansy/indent",
   "version": "0.0.2",
-  "description": "判断当前值是否为空",
+  "description": "每一行紧跟前导空白的插入值为多行时，保持缩进。",
   "author": "Pansy Team",
   "license": "MIT",
   "main": "dist/index.js",
@@ -15,11 +15,14 @@
   "scripts": {
     "build": "pansy"
   },
+  "dependencies": {
+    "@pansy/is-array": "^0.0.2",
+    "@pansy/is-function": "^0.0.2"
+  },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0"
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "b3b898b6f431d915d06671a5fa20c08c1ff09b0d"
+  }
 }

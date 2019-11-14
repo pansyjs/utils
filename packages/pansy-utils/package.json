@@ -1,7 +1,7 @@
 {
   "name": "@pansy/utils",
   "version": "0.0.2",
-  "description": "汇总包",
+  "description": "汇总工具方法和类",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "unpkg": "dist/index.umd.js",

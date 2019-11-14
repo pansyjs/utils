@@ -1,7 +1,7 @@
 {
-  "name": "@pansy/is-null",
+  "name": "@pansy/is-array",
   "version": "0.0.2",
-  "description": "判断当前值是否为空",
+  "description": "判断当前值是否为数组",
   "author": "Pansy Team",
   "license": "MIT",
   "main": "dist/index.js",
@@ -20,6 +20,5 @@
   },
   "publishConfig": {
     "access": "public"
-  },
-  "gitHead": "b3b898b6f431d915d06671a5fa20c08c1ff09b0d"
+  }
 }
