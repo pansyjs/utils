@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-null",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "判断当前值是否为空",
   "license": "MIT",
   "main": "dist/index.js",
