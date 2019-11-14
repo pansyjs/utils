@@ -2,7 +2,6 @@
   "name": "@pansy/workspace",
   "version": "1.0.0",
   "description": "小巧实用的工具类库",
-  "main": "index.js",
   "repository": "git@github.com:pansyjs/utils.git",
   "author": "Pansy Team",
   "license": "MIT",
@@ -12,10 +11,11 @@
     "clean": "lerna clean",
     "test": "walrus test",
     "prerelease": "lerna run build",
-    "release": "yarn --pure-lockfile && node scripts/release.js"
+    "release": "yarn --pure-lockfile && walrus release"
   },
   "devDependencies": {
-    "@walrus/cli": "^0.3.0",
+    "@walrus/cli": "^0.3.1",
+    "@walrus/plugin-lerna-release": "^1.0.3",
     "lerna": "^3.18.4",
     "typescript": "^3.7.2"
   },
