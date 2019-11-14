@@ -1,5 +1,9 @@
-# utils
-小巧实用的工具类库
+<h1 align="center">Pansy Utils</h1>
+
+> 小巧实用的工具类库
+
+[![NPM version](https://img.shields.io/npm/v/@pansy/utils.svg?style=flat)](https://npmjs.org/package/@pansy/utils)
+[![NPM downloads](http://img.shields.io/npm/dm/@pansy/utils.svg?style=flat)](https://npmjs.org/package/@pansy/utils)
 
 <!-- start-directory -->
 |包名|描述|
