@@ -15,7 +15,11 @@
     "build": "pansy"
   },
   "devDependencies": {
-    "@walrus/pansy": "^0.2.0",
+    "@walrus/pansy": "^0.2.0",ß
     "typescript": "^3.7.2"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "b3b898b6f431d915d06671a5fa20c08c1ff09b0d"
 }
