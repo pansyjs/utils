@@ -7,10 +7,9 @@ const config: Config = {
     format: ['cjs', 'es', 'umd', 'umd-min'],
     moduleName: 'pansy',
     sourceMap: true,
-  },
-  externals: [
-    ...Object.keys(require('./package').dependencies)
-  ]
+  }
 }
+
+console.log(config);
 
 export default config

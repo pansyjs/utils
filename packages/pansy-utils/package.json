@@ -14,6 +14,10 @@
     "build": "pansy"
   },
   "dependencies": {
+    "@pansy/dent": "^0.0.2",
+    "@pansy/indent": "^0.0.2",
+    "@pansy/is-array": "^0.0.2",
+    "@pansy/is-function": "^0.0.2",
     "@pansy/is-null": "^0.0.2"
   },
   "devDependencies": {

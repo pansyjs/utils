@@ -1,4 +1,3 @@
-import { Config } from '@walrus/pansy';
 import { lodash } from '@walrus/shared-utils';
 
 interface AnyObject {
@@ -16,7 +15,7 @@ function isPansyPackage(name: string): boolean {
 /**
  * 获取所有需要导出的包
  */
-function getGlobals(): AnyObject {
+export default function getGlobals(): AnyObject {
   // 获取所有依赖项
   const dependencies = require('./package.json').dependencies;
 
@@ -30,15 +29,3 @@ function getGlobals(): AnyObject {
 
   return globals;
 }
-
-const config: Config = {
-  input: 'src/index.ts',
-  output: {
-    format: ['cjs', 'es', 'umd', 'umd-min'],
-    moduleName: 'indent',
-    sourceMap: true,
-  },
-  globals: getGlobals()
-}
-
-export default config

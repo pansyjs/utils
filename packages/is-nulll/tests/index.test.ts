@@ -1,16 +1,33 @@
 
 import isNull from '../src';
 
+// 正确的测试用例
+const correctCase = [
+  null
+];
+
+// 错误的测试用例
+const wrongCase = [
+  undefined,
+  0,
+  '',
+  'a',
+  true,
+  [],
+  {},
+  ['a']
+];
+
 describe('isNull', () => {
-  it('test null', () => {
-    expect(isNull(null)).toEqual(true);
+  it('正确的', () => {
+    correctCase.forEach((item) => {
+      expect(isNull(item)).toEqual(true);
+    })
   });
 
-  it('test string', () => {
-    expect(isNull('a')).toEqual(false);
-  });
-
-  it('test number', () => {
-    expect(isNull(1)).toEqual(false);
+  it('错误的', () => {
+    wrongCase.forEach((item) => {
+      expect(isNull(item)).toEqual(false);
+    })
   });
 });
