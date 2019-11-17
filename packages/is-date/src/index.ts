@@ -1,0 +1,15 @@
+import getType from '@pansy/get-type';
+
+/**
+ * 检查 `value` 是否是一个日期。
+ *
+ * @param value 要检查的值
+ * @returns `value` 是日期返回 `true`，否则返回 `false`
+ * @example
+ * ```ts
+ * isDate(new Date()) // => true
+ * ```
+ */
+export function isDate(value: any): value is Date {
+  return getType(value) === 'Date'
+}

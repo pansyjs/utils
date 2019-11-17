@@ -1,0 +1,22 @@
+{
+  "name": "@pansy/enhance-type",
+  "version": "0.0.4",
+  "description": "增强类型",
+  "author": "Pansy Team",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pansy"
+  },
+  "devDependencies": {
+    "@walrus/pansy": "^0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
