@@ -18,7 +18,7 @@ yarn add @pansy/is-null
 ```
 import isNull from '@pansy/is-null';
 
-let name = mull;
+let name = null;
 
 if (isNull(name)) {
   console.log('value is null');
