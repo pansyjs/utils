@@ -31,11 +31,14 @@ yarn add @pansy/utils
 <!-- start-directory -->
 |包名|描述|
 |---|---|
-|[@pansy/group-by](https://github.com/pansyjs/utils/tree/master/packages/group-by/)|根据迭代函数返回的值对数组进行分组。|
 |[@pansy/dent](https://github.com/pansyjs/utils/tree/master/packages/dent/)|每一行紧跟前导空白的插入值为多行时，保持缩进，且移除每一行的公共前导空白|
+|[@pansy/enhance-type](https://github.com/pansyjs/utils/tree/master/packages/enhance-type/)|增强类型|
+|[@pansy/get-type](https://github.com/pansyjs/utils/tree/master/packages/get-type/)|检测 `value` 的类型|
+|[@pansy/group-by](https://github.com/pansyjs/utils/tree/master/packages/group-by/)|根据迭代函数返回的值对数组进行分组。|
 |[@pansy/indent](https://github.com/pansyjs/utils/tree/master/packages/indent/)|每一行紧跟前导空白的插入值为多行时，保持缩进。|
 |[@pansy/is-array](https://github.com/pansyjs/utils/tree/master/packages/is-array/)|判断当前值是否为数组|
 |[@pansy/is-boolean](https://github.com/pansyjs/utils/tree/master/packages/is-boolean/)|判断当前值是否为boolean|
+|[@pansy/is-date](https://github.com/pansyjs/utils/tree/master/packages/is-date/)|判断当前值是否是一个日期|
 |[@pansy/is-function](https://github.com/pansyjs/utils/tree/master/packages/is-function/)|判断当前值是否为函数|
 |[@pansy/is-nil](https://github.com/pansyjs/utils/tree/master/packages/is-nil/)|判断当前值是否为null或undefined|
 |[@pansy/is-null](https://github.com/pansyjs/utils/tree/master/packages/is-nulll/)|判断当前值是否为空|

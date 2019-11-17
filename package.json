@@ -11,7 +11,7 @@
     "clean": "lerna clean",
     "test": "walrus test",
     "build": "lerna run build",
-    "update-readme": "ts-node scripts/update-readme.ts",
+    "readme": "ts-node scripts/update-readme.ts",
     "prerelease": "yarn build",
     "release": "yarn --pure-lockfile && walrus release"
   },
