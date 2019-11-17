@@ -1,6 +1,6 @@
 {
   "name": "@pansy/utils",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "汇总工具方法和类",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -14,11 +14,11 @@
     "build": "pansy"
   },
   "dependencies": {
-    "@pansy/dent": "^0.0.3",
-    "@pansy/indent": "^0.0.3",
-    "@pansy/is-array": "^0.0.3",
-    "@pansy/is-function": "^0.0.3",
-    "@pansy/is-null": "^0.0.3"
+    "@pansy/dent": "^0.0.4",
+    "@pansy/indent": "^0.0.4",
+    "@pansy/is-array": "^0.0.4",
+    "@pansy/is-function": "^0.0.4",
+    "@pansy/is-null": "^0.0.4"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0",

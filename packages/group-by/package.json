@@ -1,6 +1,6 @@
 {
   "name": "@pansy/group-by",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "根据迭代函数返回的值对数组进行分组。",
   "author": "Pansy Team",
   "license": "MIT",
