@@ -10,7 +10,7 @@ const actions: Action[] = [
   { module: 'module3', action: 'action1' },
 ];
 
-let policy = null;
+let policy: Policy;
 
 beforeEach(() => {
   policy = new Policy(actions);

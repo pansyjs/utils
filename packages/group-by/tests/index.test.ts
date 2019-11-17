@@ -27,7 +27,7 @@ describe('groupBy', () => {
   });
 
   it('测试格式化', () => {
-    const formatter = (item) => {
+    const formatter = (item: any) => {
       return `${item.name}:${item.age}`;
     };
     expect(groupBy(users,item => item.age, formatter)).toEqual(
