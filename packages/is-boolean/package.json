@@ -1,0 +1,24 @@
+{
+  "name": "@pansy/is-boolean",
+  "version": "0.0.3",
+  "description": "判断当前值是否为boolean",
+  "author": "Pansy Team",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pansy"
+  },
+  "devDependencies": {
+    "@walrus/pansy": "^0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
