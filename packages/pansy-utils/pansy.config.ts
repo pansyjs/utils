@@ -35,7 +35,7 @@ function getGlobals(): AnyObject {
 const config: Config = {
   output: {
     format: ['cjs', 'es', 'umd', 'umd-min'],
-    moduleName: 'dent',
+    moduleName: 'pansy',
     sourceMap: true,
   },
   globals: getGlobals()
