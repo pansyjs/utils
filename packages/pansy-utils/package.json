@@ -1,6 +1,6 @@
 {
   "name": "@pansy/utils",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "汇总工具方法和类",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
@@ -14,19 +14,19 @@
     "build": "pansy"
   },
   "dependencies": {
-    "@pansy/dent": "^0.0.4",
-    "@pansy/get-type": "^0.0.4",
-    "@pansy/group-by": "^0.0.4",
-    "@pansy/indent": "^0.0.4",
-    "@pansy/is-array": "^0.0.4",
-    "@pansy/is-boolean": "^0.0.4",
-    "@pansy/is-date": "^0.0.4",
-    "@pansy/is-function": "^0.0.4",
-    "@pansy/is-nil": "^0.0.4",
-    "@pansy/is-null": "^0.0.4",
-    "@pansy/is-string": "^0.0.4",
-    "@pansy/is-undefined": "^0.0.4",
-    "@pansy/policy": "^0.0.4"
+    "@pansy/dent": "^0.1.0",
+    "@pansy/get-type": "^0.1.0",
+    "@pansy/group-by": "^0.1.0",
+    "@pansy/indent": "^0.1.0",
+    "@pansy/is-array": "^0.1.0",
+    "@pansy/is-boolean": "^0.1.0",
+    "@pansy/is-date": "^0.1.0",
+    "@pansy/is-function": "^0.1.0",
+    "@pansy/is-nil": "^0.1.0",
+    "@pansy/is-null": "^0.1.0",
+    "@pansy/is-string": "^0.1.0",
+    "@pansy/is-undefined": "^0.1.0",
+    "@pansy/policy": "^0.1.0"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0",

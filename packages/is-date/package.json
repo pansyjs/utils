@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-date",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "判断当前值是否是一个日期",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "build": "pansy"
   },
   "dependencies": {
-    "@pansy/get-type": "^0.0.4"
+    "@pansy/get-type": "^0.1.0"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0"

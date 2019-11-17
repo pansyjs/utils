@@ -1,6 +1,6 @@
 {
   "name": "@pansy/get-type",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "检测 `value` 的类型",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "build": "pansy"
   },
   "dependencies": {
-    "@pansy/enhance-type": "^0.0.4"
+    "@pansy/enhance-type": "^0.1.0"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0"
