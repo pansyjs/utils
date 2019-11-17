@@ -15,10 +15,16 @@
   },
   "dependencies": {
     "@pansy/dent": "^0.0.4",
+    "@pansy/group-by": "^0.0.4",
     "@pansy/indent": "^0.0.4",
     "@pansy/is-array": "^0.0.4",
+    "@pansy/is-boolean": "^0.0.4",
     "@pansy/is-function": "^0.0.4",
-    "@pansy/is-null": "^0.0.4"
+    "@pansy/is-nil": "^0.0.4",
+    "@pansy/is-null": "^0.0.4",
+    "@pansy/is-string": "^0.0.4",
+    "@pansy/is-undefined": "^0.0.4",
+    "@pansy/policy": "^0.0.4"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0",
