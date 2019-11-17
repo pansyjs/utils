@@ -1,26 +1,22 @@
-<h1 align="center">@pansy/is-array</h1>
+<h1 align="center">@pansy/is-function</h1>
 
-> 判断当前值是否为数组
+> 判断当前值是否为函数
 
 ## 📦 安装
 
 ```
 // npm
-npm install @pansy/is-array --dev
+npm install @pansy/is-function --dev
 
 // yarn
-yarn add @pansy/is-array
+yarn add @pansy/is-function
 
 ```
 
 ## 🔨 使用
 
 ```
-import isArray from '@pansy/is-array';
+import isFunction from '@pansy/is-function';
 
-let name = mull;
-
-if (!isArray(name)) {
-  console.log('value is not array');
-}
+console.log(isFunction(() => {})); // true
 ```

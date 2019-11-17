@@ -1,26 +1,22 @@
-<h1 align="center">@pansy/is-array</h1>
+<h1 align="center">@pansy/indent</h1>
 
-> 判断当前值是否为数组
+> 每一行紧跟前导空白的插入值为多行时，保持缩进
 
 ## 📦 安装
 
 ```
 // npm
-npm install @pansy/is-array --dev
+npm install @pansy/indent --dev
 
 // yarn
-yarn add @pansy/is-array
+yarn add @pansy/indent
 
 ```
 
 ## 🔨 使用
 
 ```
-import isArray from '@pansy/is-array';
+import isArray from '@pansy/indent';
 
-let name = mull;
-
-if (!isArray(name)) {
-  console.log('value is not array');
-}
+indent`hello world`
 ```

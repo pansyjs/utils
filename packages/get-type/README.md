@@ -1,26 +1,22 @@
-<h1 align="center">@pansy/is-null</h1>
+<h1 align="center">@pansy/get-type</h1>
 
-> 判断当前值是否为空
+> 检测 `value` 的类型
 
 ## 📦 安装
 
 ```
 // npm
-npm install @pansy/is-null --dev
+npm install @pansy/get-type --dev
 
 // yarn
-yarn add @pansy/is-null
+yarn add @pansy/get-type
 
 ```
 
 ## 🔨 使用
 
 ```
-import isNull from '@pansy/is-null';
+import getType from '@pansy/get-type';
 
-let name = null;
-
-if (isNull(name)) {
-  console.log('value is null');
-}
+console.log(getType('')); // String
 ```
