@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-null",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "判断当前值是否为空",
   "author": "Pansy Team",
   "license": "MIT",
