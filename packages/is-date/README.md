@@ -1,26 +1,24 @@
-<h1 align="center">@pansy/is-null</h1>
+<h1 align="center">@pansy/is-date</h1>
 
-> 判断当前值是否为空
+> 判断当前值是否为一个日期
 
 ## 📦 安装
 
 ```
 // npm
-npm install @pansy/is-null --dev
+npm install @pansy/is-date --dev
 
 // yarn
-yarn add @pansy/is-null
+yarn add @pansy/is-date
 
 ```
 
 ## 🔨 使用
 
 ```
-import isNull from '@pansy/is-null';
+import isDate from '@pansy/is-date';
 
-let name = null;
+let value = new Date();
 
-if (isNull(name)) {
-  console.log('value is null');
-}
+console.log(isDate(value)); // true
 ```
