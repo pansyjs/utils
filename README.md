@@ -9,9 +9,9 @@
 
 * 🚀 快速，使用简单，每个包只提供一种功能
 * 📦 基于 rollup 进行打包，提供`cjs`、`es`、`umd`三种格式
-* 💻 使用 TypeScript 编写，完善的类型定义
+* 💻 使用 TypeScript 构建，提供完整的类型定义文件
 
-📦 安装
+## ⛄️ 安装
 
 * npm 安装
   
@@ -26,6 +26,8 @@ yarn add @pansy/utils
 
 **也可独立安装每个独立的功能包**
 
+## 📦 packages
+
 <!-- start-directory -->
 |包名|描述|
 |---|---|
@@ -33,7 +35,9 @@ yarn add @pansy/utils
 |[@pansy/indent](https://github.com/pansyjs/utils/tree/master/packages/indent/)|每一行紧跟前导空白的插入值为多行时，保持缩进。|
 |[@pansy/is-array](https://github.com/pansyjs/utils/tree/master/packages/is-array/)|判断当前值是否为数组|
 |[@pansy/is-function](https://github.com/pansyjs/utils/tree/master/packages/is-function/)|判断当前值是否为函数|
+|[@pansy/is-nil](https://github.com/pansyjs/utils/tree/master/packages/is-nil/)|判断当前值是否为null或undefined|
 |[@pansy/is-null](https://github.com/pansyjs/utils/tree/master/packages/is-nulll/)|判断当前值是否为空|
+|[@pansy/is-undefined](https://github.com/pansyjs/utils/tree/master/packages/is-undefined/)|判断当前值是否为undefined|
 |[@pansy/utils](https://github.com/pansyjs/utils/tree/master/packages/pansy-utils/)|汇总工具方法和类|
 
 <!-- end-directory -->
