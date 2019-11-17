@@ -1,0 +1,29 @@
+{
+  "name": "@pansy/policy",
+  "version": "0.0.3",
+  "description": "解析权限策略，并提供验证功能",
+  "author": "Pansy Team",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pansy"
+  },
+  "dependencies": {
+    "@pansy/group-by": "^0.0.3",
+    "@pansy/is-array": "^0.0.3",
+    "@pansy/is-string": "^0.0.3"
+  },
+  "devDependencies": {
+    "@walrus/pansy": "^0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}
