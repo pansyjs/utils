@@ -43,6 +43,7 @@ yarn add @pansy/utils
 |[@pansy/is-nil](https://github.com/pansyjs/utils/tree/master/packages/is-nil/)|判断当前值是否为null或undefined|
 |[@pansy/is-null](https://github.com/pansyjs/utils/tree/master/packages/is-nulll/)|判断当前值是否为空|
 |[@pansy/is-promise](https://github.com/pansyjs/utils/tree/master/packages/is-promise/)|判断当前值是否为`promise`|
+|[@pansy/is-regexp](https://github.com/pansyjs/utils/tree/master/packages/is-regexp/)|判断当前值是否为正则表达式|
 |[@pansy/is-string](https://github.com/pansyjs/utils/tree/master/packages/is-string/)|判断当前值是否为空|
 |[@pansy/is-undefined](https://github.com/pansyjs/utils/tree/master/packages/is-undefined/)|判断当前值是否为undefined|
 |[@pansy/utils](https://github.com/pansyjs/utils/tree/master/packages/pansy-utils/)|汇总工具方法和类|

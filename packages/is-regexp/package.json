@@ -1,0 +1,27 @@
+{
+  "name": "@pansy/is-regexp",
+  "version": "0.1.0",
+  "description": "判断当前值是否为正则表达式",
+  "author": "Pansy Team",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "unpkg": "dist/index.umd.js",
+  "jsdelivr": "dist/index.umd.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "pansy"
+  },
+  "dependencies": {
+    "@pansy/get-type": "^0.1.0"
+  },
+  "devDependencies": {
+    "@walrus/pansy": "^0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

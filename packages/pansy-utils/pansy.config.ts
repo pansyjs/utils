@@ -41,4 +41,4 @@ const config: Config = {
   globals: getGlobals()
 }
 
-export default config
+export default config;

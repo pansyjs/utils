@@ -1,14 +1,15 @@
 
-import isDate from '../src';
+import isRegExp from '../src';
 
 // 正确的测试用例
 const correctCase = [
-  new Date()
+  /a/,
+  /a/g,
+  new RegExp('a', 'g')
 ];
 
 // 错误的测试用例
 const wrongCase = [
-  undefined,
   0,
   '',
   'a',
@@ -18,16 +19,16 @@ const wrongCase = [
   ['a']
 ];
 
-describe('isDate', () => {
+describe('isRegExp', () => {
   it('正确的', () => {
     correctCase.forEach((item) => {
-      expect(isDate(item)).toEqual(true);
+      expect(isRegExp(item)).toEqual(true);
     })
   });
 
   it('错误的', () => {
     wrongCase.forEach((item) => {
-      expect(isDate(item)).toEqual(false);
+      expect(isRegExp(item)).toEqual(false);
     })
   });
 });

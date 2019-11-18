@@ -25,6 +25,7 @@
     "@pansy/is-nil": "^0.1.0",
     "@pansy/is-null": "^0.1.0",
     "@pansy/is-promise": "^0.1.0",
+    "@pansy/is-regexp": "^0.1.0",
     "@pansy/is-string": "^0.1.0",
     "@pansy/is-undefined": "^0.1.0",
     "@pansy/policy": "^0.1.0"

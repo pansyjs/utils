@@ -10,6 +10,6 @@ import getType from '@pansy/get-type';
  * isDate(new Date()) // => true
  * ```
  */
-export function isDate(value: any): value is Date {
+export default function isDate(value: any): value is Date {
   return getType(value) === 'Date'
 }

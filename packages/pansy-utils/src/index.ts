@@ -6,6 +6,7 @@ export { default as isNil } from '@pansy/is-nil';
 export { default as isNull } from '@pansy/is-null';
 export { default as isString } from '@pansy/is-string';
 export { default as isPromise } from '@pansy/is-promise';
+export { default as isRegExp } from '@pansy/is-regexp';
 export { default as isDate } from '@pansy/is-date';
 export { default as isUndefined } from '@pansy/is-undefined';
 
