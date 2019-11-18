@@ -6,6 +6,7 @@ export { default as isInteger } from '@pansy/is-integer';
 export { default as isNil } from '@pansy/is-nil';
 export { default as isNull } from '@pansy/is-null';
 export { default as isNumber } from '@pansy/is-number';
+export { default as isPlainObject } from '@pansy/is-plain-object';
 export { default as isString } from '@pansy/is-string';
 export { default as isPromise } from '@pansy/is-promise';
 export { default as isRegExp } from '@pansy/is-regexp';
