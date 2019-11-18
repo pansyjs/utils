@@ -32,8 +32,8 @@ yarn add @pansy/utils
 |包名|描述|
 |---|---|
 |[@pansy/dent](https://github.com/pansyjs/utils/tree/master/packages/dent/)|每一行紧跟前导空白的插入值为多行时，保持缩进，且移除每一行的公共前导空白|
-|[@pansy/enhance-type](https://github.com/pansyjs/utils/tree/master/packages/enhance-type/)|增强类型|
 |[@pansy/get-type](https://github.com/pansyjs/utils/tree/master/packages/get-type/)|检测 `value` 的类型|
+|[@pansy/enhance-type](https://github.com/pansyjs/utils/tree/master/packages/enhance-type/)|增强类型|
 |[@pansy/group-by](https://github.com/pansyjs/utils/tree/master/packages/group-by/)|根据迭代函数返回的值对数组进行分组。|
 |[@pansy/indent](https://github.com/pansyjs/utils/tree/master/packages/indent/)|每一行紧跟前导空白的插入值为多行时，保持缩进。|
 |[@pansy/is-array](https://github.com/pansyjs/utils/tree/master/packages/is-array/)|判断当前值是否为数组|
@@ -44,6 +44,7 @@ yarn add @pansy/utils
 |[@pansy/is-nil](https://github.com/pansyjs/utils/tree/master/packages/is-nil/)|判断当前值是否为null或undefined|
 |[@pansy/is-null](https://github.com/pansyjs/utils/tree/master/packages/is-nulll/)|判断当前值是否为空|
 |[@pansy/is-number](https://github.com/pansyjs/utils/tree/master/packages/is-number/)|判断当前值是否为数字|
+|[@pansy/is-plain-object](https://github.com/pansyjs/utils/tree/master/packages/is-plain-object/)|判断当前值是否为简单对象|
 |[@pansy/is-promise](https://github.com/pansyjs/utils/tree/master/packages/is-promise/)|判断当前值是否为`promise`|
 |[@pansy/is-regexp](https://github.com/pansyjs/utils/tree/master/packages/is-regexp/)|判断当前值是否为正则表达式|
 |[@pansy/is-string](https://github.com/pansyjs/utils/tree/master/packages/is-string/)|判断当前值是否为空|
