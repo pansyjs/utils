@@ -2,8 +2,10 @@
 export { default as isArray } from '@pansy/is-array';
 export { default as isBoolean } from '@pansy/is-boolean';
 export { default as isFunction } from '@pansy/is-function';
+export { default as isInteger } from '@pansy/is-integer';
 export { default as isNil } from '@pansy/is-nil';
 export { default as isNull } from '@pansy/is-null';
+export { default as isNumber } from '@pansy/is-number';
 export { default as isString } from '@pansy/is-string';
 export { default as isPromise } from '@pansy/is-promise';
 export { default as isRegExp } from '@pansy/is-regexp';
