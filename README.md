@@ -40,8 +40,10 @@ yarn add @pansy/utils
 |[@pansy/is-boolean](https://github.com/pansyjs/utils/tree/master/packages/is-boolean/)|判断当前值是否为boolean|
 |[@pansy/is-date](https://github.com/pansyjs/utils/tree/master/packages/is-date/)|判断当前值是否是一个日期|
 |[@pansy/is-function](https://github.com/pansyjs/utils/tree/master/packages/is-function/)|判断当前值是否为函数|
+|[@pansy/is-integer](https://github.com/pansyjs/utils/tree/master/packages/is-integer/)|判断当前值是否为一个整数|
 |[@pansy/is-nil](https://github.com/pansyjs/utils/tree/master/packages/is-nil/)|判断当前值是否为null或undefined|
 |[@pansy/is-null](https://github.com/pansyjs/utils/tree/master/packages/is-nulll/)|判断当前值是否为空|
+|[@pansy/is-number](https://github.com/pansyjs/utils/tree/master/packages/is-number/)|判断当前值是否为数字|
 |[@pansy/is-promise](https://github.com/pansyjs/utils/tree/master/packages/is-promise/)|判断当前值是否为`promise`|
 |[@pansy/is-regexp](https://github.com/pansyjs/utils/tree/master/packages/is-regexp/)|判断当前值是否为正则表达式|
 |[@pansy/is-string](https://github.com/pansyjs/utils/tree/master/packages/is-string/)|判断当前值是否为空|
