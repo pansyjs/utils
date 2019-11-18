@@ -1,6 +1,5 @@
 {
   "name": "@pansy/workspace",
-  "version": "1.0.0",
   "description": "小巧实用的工具类库",
   "repository": "git@github.com:pansyjs/utils.git",
   "author": "Pansy Team",
