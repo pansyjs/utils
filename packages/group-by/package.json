@@ -13,7 +13,7 @@
     "dist"
   ],
   "scripts": {
-    "build": "pansy"
+    "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0"

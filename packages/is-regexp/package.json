@@ -13,13 +13,10 @@
     "dist"
   ],
   "scripts": {
-    "build": "pansy"
+    "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
     "@pansy/get-type": "^0.1.1"
-  },
-  "devDependencies": {
-    "@walrus/pansy": "^0.2.0"
   },
   "publishConfig": {
     "access": "public"
