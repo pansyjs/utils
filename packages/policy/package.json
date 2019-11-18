@@ -1,6 +1,6 @@
 {
   "name": "@pansy/policy",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "解析权限策略，并提供验证功能",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "build": "pansy"
   },
   "dependencies": {
-    "@pansy/group-by": "^0.1.0",
-    "@pansy/is-array": "^0.1.0",
-    "@pansy/is-string": "^0.1.0"
+    "@pansy/group-by": "^0.1.1",
+    "@pansy/is-array": "^0.1.1",
+    "@pansy/is-string": "^0.1.1"
   },
   "devDependencies": {
     "@walrus/pansy": "^0.2.0"
