@@ -1,6 +1,6 @@
 {
   "name": "@pansy/policy",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "解析权限策略，并提供验证功能",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
-    "@pansy/group-by": "^0.1.1",
-    "@pansy/is-array": "^0.1.1",
-    "@pansy/is-string": "^0.1.1"
+    "@pansy/group-by": "^0.1.2",
+    "@pansy/is-array": "^0.1.2",
+    "@pansy/is-string": "^0.1.2"
   },
   "publishConfig": {
     "access": "public"
