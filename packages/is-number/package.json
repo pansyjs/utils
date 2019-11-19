@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-number",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "判断当前值是否为数字",
   "author": "Pansy Team",
   "license": "MIT",
