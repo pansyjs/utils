@@ -7,6 +7,7 @@ export { default as isNaN } from '@pansy/is-nan';
 export { default as isNil } from '@pansy/is-nil';
 export { default as isNull } from '@pansy/is-null';
 export { default as isNumber } from '@pansy/is-number';
+export { default as isObject } from '@pansy/is-object';
 export { default as isPlainObject } from '@pansy/is-plain-object';
 export { default as isString } from '@pansy/is-string';
 export { default as isPromise } from '@pansy/is-promise';

@@ -27,6 +27,7 @@
     "@pansy/is-nil": "^0.1.2",
     "@pansy/is-null": "^0.1.2",
     "@pansy/is-number": "^0.1.2",
+    "@pansy/is-object": "^0.1.2",
     "@pansy/is-plain-object": "^0.1.2",
     "@pansy/is-promise": "^0.1.2",
     "@pansy/is-regexp": "^0.1.2",
