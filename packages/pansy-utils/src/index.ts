@@ -22,5 +22,7 @@ export { default as getType } from '@pansy/get-type';
 // 类方法
 export { default as Policy } from '@pansy/policy';
 
+export * from '@pansy/url-utils';
+
 // 一些类型定义
 export * from '@pansy/enhance-type';
