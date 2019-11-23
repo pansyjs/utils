@@ -32,8 +32,8 @@ yarn add @pansy/utils
 |包名|描述|
 |---|---|
 |[@pansy/dent](https://github.com/pansyjs/utils/tree/master/packages/dent/)|每一行紧跟前导空白的插入值为多行时，保持缩进，且移除每一行的公共前导空白|
-|[@pansy/get-type](https://github.com/pansyjs/utils/tree/master/packages/get-type/)|检测 `value` 的类型|
 |[@pansy/enhance-type](https://github.com/pansyjs/utils/tree/master/packages/enhance-type/)|增强类型|
+|[@pansy/get-type](https://github.com/pansyjs/utils/tree/master/packages/get-type/)|检测 `value` 的类型|
 |[@pansy/group-by](https://github.com/pansyjs/utils/tree/master/packages/group-by/)|根据迭代函数返回的值对数组进行分组。|
 |[@pansy/indent](https://github.com/pansyjs/utils/tree/master/packages/indent/)|每一行紧跟前导空白的插入值为多行时，保持缩进。|
 |[@pansy/is-array](https://github.com/pansyjs/utils/tree/master/packages/is-array/)|判断当前值是否为数组|
@@ -51,8 +51,10 @@ yarn add @pansy/utils
 |[@pansy/is-regexp](https://github.com/pansyjs/utils/tree/master/packages/is-regexp/)|判断当前值是否为正则表达式|
 |[@pansy/is-string](https://github.com/pansyjs/utils/tree/master/packages/is-string/)|判断当前值是否为空|
 |[@pansy/is-undefined](https://github.com/pansyjs/utils/tree/master/packages/is-undefined/)|判断当前值是否为undefined|
-|[@pansy/utils](https://github.com/pansyjs/utils/tree/master/packages/pansy-utils/)|汇总工具方法和类|
+|[@pansy/number-precision](https://github.com/pansyjs/utils/tree/master/packages/number-precision/)|解决浮动运算问题，避免小数点后产生多数值和计算精度损失|
+|[@pansy/utils](https://github.com/pansyjs/utils/tree/master/packages/pansy-utils/)|小巧实用的工具类库|
 |[@pansy/policy](https://github.com/pansyjs/utils/tree/master/packages/policy/)|解析权限策略，并提供验证功能|
+|[@pansy/url-utils](https://github.com/pansyjs/utils/tree/master/packages/url-utils/)|url相关工具方法|
 
 <!-- end-directory -->
 
