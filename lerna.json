@@ -3,8 +3,7 @@
   "useWorkspaces": true,
   "version": "0.2.0",
   "packages": [
-    "packages/*",
-    "examples/*"
+    "packages/*"
   ],
   "changelog": {
     "repo": "walrus",

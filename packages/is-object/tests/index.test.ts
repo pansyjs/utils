@@ -4,7 +4,7 @@ import isObject from '../src';
 // 正确的测试用例
 const correctCase = [
   {},
-  new Object();
+  new Object()
 ];
 
 // 错误的测试用例
