@@ -18,9 +18,7 @@ yarn add @pansy/arabic-chinese
 ```
 import ArabicChinese from '@pansy/arabic-chinese';
 
-let name = mull;
+const arabicChinese = new ArabicChinese();
 
-if (!isArray(name)) {
-  console.log('value is not array');
-}
+arabicChinese.encode(1); // '一'
 ```
