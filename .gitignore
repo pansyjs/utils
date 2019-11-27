@@ -12,7 +12,6 @@ node_modules
 # build output
 lib
 dist
-public
 
 # IDE
 .idea
