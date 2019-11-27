@@ -2,11 +2,11 @@
 
 > 阿拉伯数字和中文数字互转
 
-## 📦 安装
+## ⛄️ 安装
 
 ```
 // npm
-npm install @pansy/arabic-chinese --dev
+npm install @pansy/arabic-chinese --save
 
 // yarn
 yarn add @pansy/arabic-chinese
@@ -22,3 +22,11 @@ const arabicChinese = new ArabicChinese();
 
 arabicChinese.encode(1); // '一'
 ```
+
+## 🐳 API
+
+### encode
+
+数字转中文
+
+

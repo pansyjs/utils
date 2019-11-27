@@ -15,11 +15,11 @@
   "scripts": {
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "dependencies": {
     "@pansy/is-nil": "^0.2.0",
     "@pansy/is-string": "^0.2.0"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
