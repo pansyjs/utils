@@ -2,29 +2,41 @@
 
 > 小巧实用的工具类库
 
+[![Alita](https://img.shields.io/badge/alitajs-pansy%20utils-blue.svg)](https://github.com/alitajs)
 [![NPM version](https://img.shields.io/npm/v/@pansy/utils.svg?style=flat)](https://npmjs.org/package/@pansy/utils)
 [![NPM downloads](http://img.shields.io/npm/dm/@pansy/utils.svg?style=flat)](https://npmjs.org/package/@pansy/utils)
 
 ## ✨ 特性
 
-* 🚀 快速，使用简单，每个包只提供一种功能
+* 🚀 快速，使用简单，每个包只提供一种功能，可单独安装
 * 📦 基于 rollup 进行打包，提供`cjs`、`es`、`umd`三种格式
 * 💻 使用 TypeScript 构建，提供完整的类型定义文件
 
 ## ⛄️ 安装
 
-* npm 安装
-  
 ```
+# npm 安装
 npm install @pansy/utils --save
-```
-* yarn 安装
-  
-```
-yarn add @pansy/utils
+
+# yarn 安装 推荐
+yarn add  @pansy/utils
 ```
 
 **也可独立安装每个独立的功能包**
+
+## 🔨 示例
+
+```
+import { isFunction } from '@pansy/utils';
+// 推荐使用
+// import isFunction from '@pansy/is-function';
+
+const fun = () => {};
+
+if (fun) {
+  console.log('is function');
+}
+```
 
 ## 📦 packages
 
@@ -57,6 +69,19 @@ yarn add @pansy/utils
 |[@pansy/url-utils](https://github.com/pansyjs/utils/tree/master/packages/url-utils/)|url相关工具方法|
 
 <!-- end-directory -->
+
+## ⌨️ 本地开发
+
+```
+# 克隆项目到本地
+git clone git@github.com:pansyjs/utils.git
+
+# 切换到项目目录
+cd ./utils
+
+# 安装依赖
+yarn bootstarp
+```
 
 ## 🌟 社区互助
 
