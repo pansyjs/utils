@@ -30,22 +30,32 @@ yarn add  @pansy/utils
 
 ## 🔨 使用
 
-1. 浏览器:
+* 浏览器:
+  
 ```
   <script src="pansy-utils.min.js"></script>
   <script>
-      var OS = 
+      var result = pansy.isFunction(() => {});
   </script>
 ```
+
+* ES6/TS
+
+```
 import { isFunction } from '@pansy/utils';
-// 推荐使用
-// import isFunction from '@pansy/is-function';
 
 const fun = () => {};
 
 if (fun) {
   console.log('is function');
 }
+```
+
+**推荐使用方法**
+
+```
+// 只引入需要使用的包
+import isFunction from '@pansy/is-function';
 ```
 
 ## 📦 packages
