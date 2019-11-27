@@ -1,10 +1,11 @@
 <h1 align="center">Pansy Utils</h1>
 
-> 小巧实用的工具类库
+<h3 align="center">小巧实用的工具类库</h3>
 
 [![Alita](https://img.shields.io/badge/alitajs-pansy%20utils-blue.svg)](https://github.com/alitajs)
 [![NPM version](https://img.shields.io/npm/v/@pansy/utils.svg?style=flat)](https://npmjs.org/package/@pansy/utils)
 [![NPM downloads](http://img.shields.io/npm/dm/@pansy/utils.svg?style=flat)](https://npmjs.org/package/@pansy/utils)
+[![lerna](https://img.shields.io/badge/maintained%20with-lerna-cc00ff.svg)](https://lerna.js.org)
 
 ## ✨ 特性
 
