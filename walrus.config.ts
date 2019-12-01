@@ -1,6 +1,6 @@
 const config = {
   plugins: {
-    'lerna-release': true
+    release: true
   }
 };
 
