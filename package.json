@@ -8,19 +8,21 @@
   "scripts": {
     "bootstrap": "yarn && lerna bootstrap",
     "clean": "lerna clean",
-    "test": "walrus test",
     "build": "lerna run build",
+    "test": "walrus test",
+    "prettier": "walrus prettier",
     "readme": "ts-node scripts/update-readme.ts",
     "prerelease": "yarn build",
     "release": "yarn --pure-lockfile && walrus release"
   },
   "devDependencies": {
-    "@walrus/cli": "^0.3.1",
+    "@walrus/cli": "^0.4.1",
     "@walrus/pansy": "^0.3.0",
     "@walrus/plugin-lerna-release": "^1.0.3",
     "fs-extra": "^8.1.0",
     "globby": "^10.0.1",
-    "ts-node": "^8.5.0",
+    "husky": "^3.1.0",
+    "ts-node": "^8.5.4",
     "typescript": "^3.7.2"
   },
   "workspaces": [
