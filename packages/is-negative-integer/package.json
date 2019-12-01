@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-negative-integer",
-  "version": "0.2.1",
+  "version": "0.3.0",
   "description": "判断当前值是否为一个负整数",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
-    "@pansy/is-integer": "^0.2.1"
+    "@pansy/is-integer": "^0.3.0"
   },
   "publishConfig": {
     "access": "public"
