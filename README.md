@@ -34,10 +34,10 @@ yarn add  @pansy/utils
 * 浏览器:
   
 ```
-  <script src="pansy-utils.min.js"></script>
-  <script>
-      var result = pansy.isFunction(() => {});
-  </script>
+<script src="pansy-utils.min.js"></script>
+<script>
+  var result = pansy.isFunction(() => {});
+</script>
 ```
 
 * ES6/TS

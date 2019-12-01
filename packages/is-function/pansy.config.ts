@@ -5,8 +5,7 @@ const config: Config = {
   banner: true,
   output: {
     format: ['cjs', 'es', 'umd', 'umd-min'],
-    moduleName: 'isFunction',
-    sourceMap: true,
+    moduleName: 'isFunction'
   }
 }
 
