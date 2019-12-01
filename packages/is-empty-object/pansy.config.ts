@@ -34,7 +34,7 @@ function getGlobals(): AnyObject {
 const config: Config = {
   output: {
     format: ['cjs', 'es', 'umd', 'umd-min'],
-    moduleName: 'isNegativeInteger'
+    moduleName: 'isEmptyObject'
   },
   globals: getGlobals()
 };
