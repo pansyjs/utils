@@ -4,17 +4,21 @@ import isObject from '../src';
 // 正确的测试用例
 const correctCase = [
   {},
-  new Object()
+  [],
+  Math,
+  () => {},
+  /ddd/
 ];
 
 // 错误的测试用例
 const wrongCase = [
-  undefined,
   '',
-  'a',
-  true,
-  [],
-  ['a']
+  false,
+  null,
+  undefined,
+  NaN,
+  Infinity,
+  Number.NEGATIVE_INFINITY
 ];
 
 describe('isObject', () => {
