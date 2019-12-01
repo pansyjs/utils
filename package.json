@@ -11,6 +11,8 @@
     "build": "lerna run build",
     "test": "walrus test",
     "prettier": "walrus prettier",
+    "lint": "walrus lint",
+    "lint:commit": "walrus commitlint --env HUSKY_GIT_PARAMS",
     "readme": "ts-node scripts/update-readme.ts",
     "prerelease": "yarn build",
     "release": "yarn --pure-lockfile && walrus release"
@@ -24,6 +26,12 @@
     "husky": "^3.1.0",
     "ts-node": "^8.5.4",
     "typescript": "^3.7.2"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "yarn prettier",
+      "commit-msg": "yarn lint:commit"
+    }
   },
   "workspaces": [
     "packages/*"
