@@ -74,6 +74,7 @@ import isFunction from '@pansy/is-function';
 | [@pansy/is-array](https://github.com/pansyjs/utils/tree/master/packages/is-array/)                       | 判断当前值是否为数组                                                     |
 | [@pansy/is-boolean](https://github.com/pansyjs/utils/tree/master/packages/is-boolean/)                   | 判断当前值是否为 boolean                                                 |
 | [@pansy/is-date](https://github.com/pansyjs/utils/tree/master/packages/is-date/)                         | 判断当前值是否是一个日期                                                 |
+| [@pansy/is-empty-object](https://github.com/pansyjs/utils/tree/master/packages/is-empty-object/)         | 判断当前值是否为一个空对象                                               |
 | [@pansy/is-function](https://github.com/pansyjs/utils/tree/master/packages/is-function/)                 | 判断当前值是否为函数                                                     |
 | [@pansy/is-integer](https://github.com/pansyjs/utils/tree/master/packages/is-integer/)                   | 判断当前值是否为一个整数                                                 |
 | [@pansy/is-nan](https://github.com/pansyjs/utils/tree/master/packages/is-nan/)                           | 判断当前值是否为`NaN`                                                    |
