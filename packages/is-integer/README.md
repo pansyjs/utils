@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-integer --dev
+npm install @pansy/is-integer --save
 
 // yarn
 yarn add @pansy/is-integer

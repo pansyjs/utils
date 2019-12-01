@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/get-type --dev
+npm install @pansy/get-type --save
 
 // yarn
 yarn add @pansy/get-type

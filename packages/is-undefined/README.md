@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-undefined --dev
+npm install @pansy/is-undefined --save
 
 // yarn
 yarn add @pansy/is-undefined

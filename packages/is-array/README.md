@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-array --dev
+npm install @pansy/is-array --save
 
 // yarn
 yarn add @pansy/is-array

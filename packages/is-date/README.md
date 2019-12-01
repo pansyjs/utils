@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-date --dev
+npm install @pansy/is-date --save
 
 // yarn
 yarn add @pansy/is-date

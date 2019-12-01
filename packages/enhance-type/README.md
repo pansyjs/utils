@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/enhance-type --dev
+npm install @pansy/enhance-type --save
 
 // yarn
 yarn add @pansy/enhance-type

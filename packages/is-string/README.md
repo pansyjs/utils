@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-string --dev
+npm install @pansy/is-string --save
 
 // yarn
 yarn add @pansy/is-string

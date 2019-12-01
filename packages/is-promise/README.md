@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-promise --dev
+npm install @pansy/is-promise --save
 
 // yarn
 yarn add @pansy/is-promise

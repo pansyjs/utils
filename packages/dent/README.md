@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/dent --dev
+npm install @pansy/dent --save
 
 // yarn
 yarn add @pansy/dent

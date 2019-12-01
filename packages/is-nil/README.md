@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-nil --dev
+npm install @pansy/is-nil --save
 
 // yarn
 yarn add @pansy/is-nil

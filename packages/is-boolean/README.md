@@ -1,12 +1,12 @@
 <h1 align="center">@pansy/is-boolean</h1>
 
-> 判断当前值是否为boolean
+> 判断当前值是否为 boolean
 
 ## 📦 安装
 
 ```
 // npm
-npm install @pansy/is-boolean --dev
+npm install @pansy/is-boolean --save
 
 // yarn
 yarn add @pansy/is-boolean

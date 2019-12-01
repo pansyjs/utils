@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/indent --dev
+npm install @pansy/indent --save
 
 // yarn
 yarn add @pansy/indent

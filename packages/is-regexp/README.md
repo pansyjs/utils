@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-regexp --dev
+npm install @pansy/is-regexp --save
 
 // yarn
 yarn add @pansy/is-regexp

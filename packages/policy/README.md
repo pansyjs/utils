@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/policy --dev
+npm install @pansy/policy --save
 
 // yarn
 yarn add @pansy/policy
@@ -71,7 +71,7 @@ interface IPolicyData {
 
 ### singleVerify(action: string): boolean
 
-单个action验证
+单个 action 验证
 
 **参数**
 
@@ -80,10 +80,9 @@ interface IPolicyData {
 - eg1: `'*'`
 - eg2: `'module1/action1'`
 
-
 ### multipleVerify(actions: string | string[]): boolean
 
-单个/多个action验证
+单个/多个 action 验证
 
 **参数**
 
@@ -95,9 +94,9 @@ interface IPolicyData {
 
 ### combinationVerify(actionStr: string): boolean
 
-组合action验证
+组合 action 验证
 
-> ! 取非 && 且  || 或
+> ! 取非 && 且 || 或
 
 **参数**
 
@@ -118,7 +117,7 @@ interface IPolicyData {
     {
       // 授权效力 allow: 允许 deny: 禁止
       effect: 'allow',
-      // 操作 
+      // 操作
       // * | string[]
       // eg: "*" 代表可访问所有权限
       // eg: "module1/*" 代表可访问module1下所有权限

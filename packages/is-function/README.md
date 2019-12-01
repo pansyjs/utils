@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-function --dev
+npm install @pansy/is-function --save
 
 // yarn
 yarn add @pansy/is-function

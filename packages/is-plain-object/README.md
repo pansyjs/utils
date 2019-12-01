@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/is-plain-object --dev
+npm install @pansy/is-plain-object --save
 
 // yarn
 yarn add @pansy/is-plain-object

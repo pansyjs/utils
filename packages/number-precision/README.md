@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/number-precision --dev
+npm install @pansy/number-precision --save
 
 // yarn
 yarn add @pansy/number-precision

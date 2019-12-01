@@ -6,7 +6,7 @@
 
 ```
 // npm
-npm install @pansy/group-by --dev
+npm install @pansy/group-by --save
 
 // yarn
 yarn add @pansy/group-by
