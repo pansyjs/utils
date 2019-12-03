@@ -2835,6 +2835,159 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@pansy/dent@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/dent/-/dent-0.2.1.tgz#aea492cb30feefaedeacfbf438d1a4cee65309ea"
+  integrity sha512-xzXQcvwxbahzh8+x/+91wbrlsyWBfBMk/Hs6kSAboi4To8hU6aExpAYc5itm6ZxqK1nFLXt5NBchyjOWLKiB9w==
+  dependencies:
+    "@pansy/indent" "^0.2.1"
+    "@pansy/is-array" "^0.2.1"
+
+"@pansy/enhance-type@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/enhance-type/-/enhance-type-0.2.1.tgz#b6736f18882031d47d2d2a79d3d23a5daf8e34fd"
+  integrity sha512-LN5iPizQNZ8LMDI7gLXJG4RKuJu/G5NP0km9qf3gT6gCe8N4zDcivj4+5UndmGy1i61FeU5FGy7HHVsFxA7L9g==
+
+"@pansy/get-type@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/get-type/-/get-type-0.2.1.tgz#6e55e5b57b66a1b8ea66bddba33dcd0c79dc72b0"
+  integrity sha512-G8pud35x0kUFbiQ5kZGfsig7WU3Al4jS7gkrbxAODzkryddT5cskBiIlrFY3I1Y90RNtbM7PxCa298vfoh7rFA==
+  dependencies:
+    "@pansy/enhance-type" "^0.2.1"
+
+"@pansy/group-by@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/group-by/-/group-by-0.2.1.tgz#16454e3fa3910569bb7723d874c764d671e04540"
+  integrity sha512-CqcqleOT18GnqbATKD64AbaDSL5AiGydzACQo7zLNFe3NQUVl7Cs3455XaSCnK49I68iyKToRc9/b2TZcWukPQ==
+
+"@pansy/indent@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/indent/-/indent-0.2.1.tgz#1b8ae493b91ad555499343fff1a7dcec10313770"
+  integrity sha512-MyaJSB2+ma4zM4L5KpilV1M1TBVqXgLMEA8luasHF0k827ILwdgXIV0Ytz4BX7F9adlxHQNHKPqcyltcpsmveg==
+  dependencies:
+    "@pansy/is-array" "^0.2.1"
+    "@pansy/is-function" "^0.2.1"
+
+"@pansy/is-array@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-array/-/is-array-0.2.1.tgz#687d777841c6dad50ccc041f361916122ee16c70"
+  integrity sha512-g2JwZwcqwB2tKDvKIqypYUlUWt7/mcQGn0DlXEHSXMsGflSkwE+Ij1INhU9tugf14U13pJlYXC+SUn0uoNo8sA==
+
+"@pansy/is-boolean@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-boolean/-/is-boolean-0.2.1.tgz#5f904406bd7cb895ad38c094eb26b30028bf8d57"
+  integrity sha512-l0gmGHoOoa3rQAPjecVyhaAtioqaGLNebGyUuDRiAyUDIgO96EtqLNjSV7TepU30/dWuSXxGzIbD34anD1HXtA==
+
+"@pansy/is-date@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-date/-/is-date-0.2.1.tgz#d1ef9cd44de1eaf052db466125519f3ac2c850f3"
+  integrity sha512-K0bfAWNvdkiJsKFhavC2oktdKw+dcJkdDyJNwx6Knl0IAMQSZGewIUw3aHKvAklZK5Ed3NA/0YPc6NzUsz3+Vw==
+  dependencies:
+    "@pansy/get-type" "^0.2.1"
+
+"@pansy/is-function@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-function/-/is-function-0.2.1.tgz#fe5369045bada85d916e82804fe1163e4bbd82b4"
+  integrity sha512-p74BGQqV/RemD7D0BNvV+51kCGrunOZjzyWCGTKyKndOTHduSDcJAa4CfGA18sJV64+1eVMOd84hH9qyr8r45w==
+
+"@pansy/is-integer@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-integer/-/is-integer-0.2.1.tgz#03957fa976fa9c8828b94d392b0c754e20fa6cd3"
+  integrity sha512-cAWqHHp7vr6Tl4hBx4D+I1/rpFkDbNxQmDV2u9PaXUy9iXfS2hgmCqOnRlVhfLTxZ8rIwyQNrYw34z4rV5auAQ==
+
+"@pansy/is-nan@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-nan/-/is-nan-0.2.1.tgz#2d0ebcfcc45a94b6057cd4cf71600e184a574d62"
+  integrity sha512-YKHFIZKvdEbkcWEc9FOvK7NxTO33o6dqzwhJSVxKdoymLnZ/528YezqmS/vYxzKl7AaZPq5cn/CeK0C9moqErQ==
+
+"@pansy/is-nil@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-nil/-/is-nil-0.2.1.tgz#05231fa41907af09a6d357e5f12bd4977aececbe"
+  integrity sha512-1ISftsyFnPGJwGBRP847hRB2x74o3CIj3aectDu9S9NeP+/k15xTp5YVb2FLShEf3liDI6CmTnHjLC+rkeS0JA==
+
+"@pansy/is-null@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-null/-/is-null-0.2.1.tgz#8f940e84160d9e2683dde3ebf38e869b2312bc8e"
+  integrity sha512-ZQc2b4VWZFEh9HJXFkGN1We8wVFWdVY5IEXeIMlK4/6HuGNtuJzqiWCy7cQM5/FxXB2rTe5q2dfR3829BFRb4A==
+
+"@pansy/is-number@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-number/-/is-number-0.2.1.tgz#a2411b657355f3f26948b6f2624847faf3ff5d1a"
+  integrity sha512-x/ohMNkPRza4Bd+8FFWAvMUsFyqBQEsAiaJPvEN37odnEO6Xf373DA+Y2/QJdPOaBnDbkQ/Kq0Ea4tuOXDIixA==
+
+"@pansy/is-object@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-object/-/is-object-0.2.1.tgz#c214ce4546e4b73659aba2aab198eb22d894aae0"
+  integrity sha512-yaN4Iv7iCbcQ6RWkGZtbk/P7gWVbLilFe25TC9ewFNzFd/tiEXe1vAKlbq9y/mqrOj15ZEnngfjip4eKm13vEA==
+
+"@pansy/is-plain-object@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-plain-object/-/is-plain-object-0.2.1.tgz#fe02c18adae8cff04f27ab124f37fcc2b509089d"
+  integrity sha512-jfTe5sdHTQBi1g3B6IWIaR+dtyZi1VVoBUVeXvihTZq2XCSz+IySDCLMnqa7prd2/lmUFFT8QTTUCD5hwUDjww==
+
+"@pansy/is-promise@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-promise/-/is-promise-0.2.1.tgz#f115b684d8e0ed6dc59c77eec3d8a38420778c30"
+  integrity sha512-c2e9ozq4jnEvXjXY0+26DXn8lJXATr4s3IGbwPT0NaxpPftkRw1TjUtzzX2bQmK1Dd+1JhAcmp+jQIiS+jUDBA==
+
+"@pansy/is-regexp@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-regexp/-/is-regexp-0.2.1.tgz#bf11813dd0e9d52cb02e426fe9846566936aaa72"
+  integrity sha512-SC/WtiIbz8r+twBIhDNOyvlmlFzgTrc7fREgyttd1wVoy+PrBufo1lq5rXDy1o9WhZU8iRwUIWQNkGJyyO+RdQ==
+  dependencies:
+    "@pansy/get-type" "^0.2.1"
+
+"@pansy/is-string@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-string/-/is-string-0.2.1.tgz#9ff7df70440d8739f06058496c295e067937fed9"
+  integrity sha512-GJhIa8aO9rF3As9fC+yMlbkKSfV3+Xuon9XBOG7euxMmkVy7EH3SyCZYg8ZGY6fo2uy9iBtTclzd0do1p3oovg==
+
+"@pansy/is-undefined@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/is-undefined/-/is-undefined-0.2.1.tgz#33a061043e8bb85bfb31bb39dd82eb5bf7094586"
+  integrity sha512-1Mpooefggf2pWcp1DaY1wI+oMKg8iG4GAnpWTbuumNytmky8Bbe/DEyqOj8TfKFwGUU8phQ66A9lYhJirul1Fw==
+
+"@pansy/policy@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/policy/-/policy-0.2.1.tgz#413a3274f785b7ac336a77484c829ddfe01069d8"
+  integrity sha512-0vFCy+gmQdEPwd2F0OSvrXbS9noMCFWltdqIxoS8uCHXqjBjlz4G47sPz1sCdp6AFdVrfmb/2NmkKnaSDy/oSQ==
+  dependencies:
+    "@pansy/group-by" "^0.2.1"
+    "@pansy/is-array" "^0.2.1"
+    "@pansy/is-string" "^0.2.1"
+
+"@pansy/url-utils@^0.2.1":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/url-utils/-/url-utils-0.2.1.tgz#a8a50e8d4e1149dab81c72de82055631d3babd42"
+  integrity sha512-V+ONl/hldWMbBL4tMi66eE7h53VAUsUUl+mNUOy1MhMcS9vkQGtMMAep4w5KhGsLILiHOTwyYXfZBdfILbToyg==
+
+"@pansy/utils@^0.2.0":
+  version "0.2.1"
+  resolved "https://registry.yarnpkg.com/@pansy/utils/-/utils-0.2.1.tgz#ef16901cb940c0d6b05f6a3c7c8afa313ab8a128"
+  integrity sha512-45PaE/dEk7PQLXw5gWLTZCdIKbgnXmFdmrd/MxduwVIxApyiCPDY0+HjnjMJkKZ9FbvDTgUiBVpX+Rw1xlvyLA==
+  dependencies:
+    "@pansy/dent" "^0.2.1"
+    "@pansy/get-type" "^0.2.1"
+    "@pansy/group-by" "^0.2.1"
+    "@pansy/indent" "^0.2.1"
+    "@pansy/is-array" "^0.2.1"
+    "@pansy/is-boolean" "^0.2.1"
+    "@pansy/is-date" "^0.2.1"
+    "@pansy/is-function" "^0.2.1"
+    "@pansy/is-integer" "^0.2.1"
+    "@pansy/is-nan" "^0.2.1"
+    "@pansy/is-nil" "^0.2.1"
+    "@pansy/is-null" "^0.2.1"
+    "@pansy/is-number" "^0.2.1"
+    "@pansy/is-object" "^0.2.1"
+    "@pansy/is-plain-object" "^0.2.1"
+    "@pansy/is-promise" "^0.2.1"
+    "@pansy/is-regexp" "^0.2.1"
+    "@pansy/is-string" "^0.2.1"
+    "@pansy/is-undefined" "^0.2.1"
+    "@pansy/policy" "^0.2.1"
+    "@pansy/url-utils" "^0.2.1"
+
 "@rollup/plugin-alias@^2.2.0":
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/@rollup/plugin-alias/-/plugin-alias-2.2.0.tgz#3ac52ece8b39583249884adb90fb316484389fe5"

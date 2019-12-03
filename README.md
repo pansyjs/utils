@@ -65,6 +65,7 @@ import isFunction from '@pansy/is-function';
 
 | 包名                                                                                                     | 描述                                                                     |
 | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------ |
+| [@pansy/array-move](https://github.com/pansyjs/utils/tree/master/packages/array-move/)                   | 将数组项移动到其他位置                                                   |
 | [@pansy/delay](https://github.com/pansyjs/utils/tree/master/packages/delay/)                             | 休眠函数                                                                 |
 | [@pansy/dent](https://github.com/pansyjs/utils/tree/master/packages/dent/)                               | 每一行紧跟前导空白的插入值为多行时，保持缩进，且移除每一行的公共前导空白 |
 | [@pansy/enhance-type](https://github.com/pansyjs/utils/tree/master/packages/enhance-type/)               | 增强类型                                                                 |

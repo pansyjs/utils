@@ -24,6 +24,9 @@ export { default as dent } from '@pansy/dent';
 export { default as getType } from '@pansy/get-type';
 export { default as groupBy } from '@pansy/group-by';
 
+// Array工具方法
+export { default as arrayMmove } from '@pansy/array-move';
+
 // 类方法
 export { default as NumberPrecision } from '@pansy/number-precision';
 export { default as Policy } from '@pansy/policy';

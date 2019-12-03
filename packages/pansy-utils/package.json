@@ -14,6 +14,7 @@
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
+    "@pansy/array-move": "^0.3.0",
     "@pansy/delay": "^0.3.0",
     "@pansy/dent": "^0.3.0",
     "@pansy/get-type": "^0.3.0",
