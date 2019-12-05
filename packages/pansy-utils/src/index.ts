@@ -24,6 +24,8 @@ export { default as dent } from '@pansy/dent';
 export { default as getType } from '@pansy/get-type';
 export { default as groupBy } from '@pansy/group-by';
 
+export { default as replaceObjectKey } from '@pansy/replace-object-key';
+
 // Array工具方法
 export { default as arrayMmove } from '@pansy/array-move';
 
