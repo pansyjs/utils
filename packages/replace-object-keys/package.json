@@ -1,7 +1,7 @@
 {
-  "name": "@pansy/replace-object-key",
+  "name": "@pansy/replace-object-keys",
   "version": "0.3.0",
-  "description": "替换 Object 对象键名，支持普通对象、数组对象以及树对象，同时含过滤功能",
+  "description": "替换对象键名，支持普通对象、对象数组以及树对象，支持过滤功能",
   "author": "Pansy Team",
   "license": "MIT",
   "main": "dist/index.js",

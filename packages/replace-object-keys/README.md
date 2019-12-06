@@ -1,22 +1,22 @@
-<h1 align="center">@pansy/replace-object-key</h1>
+<h1 align="center">@pansy/replace-object-keys</h1>
 
-> 对象键名转换
+> 替换对象键名，支持普通对象、对象数组以及树对象，支持过滤功能
 
 ## 📦 安装
 
 ```
 // npm
-npm install @pansy/replace-object-key --save
+npm install @pansy/replace-object-keys --save
 
 // yarn
-yarn add @pansy/replace-object-key
+yarn add @pansy/replace-object-keys
 
 ```
 
 ## 🔨 使用
 
 ```
-import { replaceObjectKey } from '@pansy/replace-object-key';
+import { replaceObjectKeys } from '@pansy/replace-object-keys';
 ```
 
 ### 参数配置
