@@ -1,4 +1,4 @@
-import replaceObjectKey from '../src';
+import replaceObjectKeys from '../src';
 
 const options = { key: 'value', name: 'label' };
 
@@ -63,12 +63,27 @@ const treeDataResult = [
   }
 ];
 
-describe('replaceObjectKey', () => {
-  it('正确的', () => {
-    expect(replaceObjectKey(objData, options)).toEqual(objDataResult);
+describe('replaceObjectKeys', () => {
+  describe('替换Keys配置为空对象', () => {
+    expect(replaceObjectKeys(objData, {})).toEqual(objData);
+  });
 
-    expect(replaceObjectKey(arrayData, options)).toEqual(arrayDataResultSimplify);
-    expect(replaceObjectKey(arrayData, options, { simplify: false })).toEqual(arrayDataResult);
-    expect(replaceObjectKey(treeData, options, { simplify: false })).toEqual(treeDataResult);
+  describe('数据源为对象', () => {
+    it('空对象', () => {
+      expect(replaceObjectKeys({}, options)).toEqual({});
+    });
+
+    it('正常替换', () => {
+      expect(replaceObjectKeys(objData, options)).toEqual(objDataResult);
+    });
+  });
+
+  describe('数据源为数组对象', () => {
+    expect(replaceObjectKeys(arrayData, options)).toEqual(arrayDataResultSimplify);
+    expect(replaceObjectKeys(arrayData, options, { simplify: false })).toEqual(arrayDataResult);
+  });
+
+  describe('数据源为树对象', () => {
+    expect(replaceObjectKeys(treeData, options, { simplify: false })).toEqual(treeDataResult);
   });
 });

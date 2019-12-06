@@ -3,6 +3,7 @@ import isObject from '@pansy/is-object';
 import isEmptyObject from '@pansy/is-empty-object';
 
 interface ReplaceConfig {
+  // 是否按替换配置返回数据，设置为 false 时同时返回未被替换的值
   simplify?: boolean;
   childrenKey?: string;
   filter?: (obj: any) => void;
@@ -34,7 +35,7 @@ function replaceKeys(data: object[] | object, options: object, config: ReplaceCo
  * 替换对象键名，支持普通对象、对象数组以及树对象，支持过滤功能
  *
  * @param data 需要处理的数据
- * @param options 替换配置
+ * @param options 需要替换的Keys配合
  * @param config 替换配置
  * @returns 处理后的数据
  * @example
@@ -49,7 +50,7 @@ const replaceObjectKeys = function f(
   config?: ReplaceConfig
 ) {
   // 如果未配置 options 则直接返回数据
-  if (!data || !options || isEmptyObject(options)) return data;
+  if (!data || !options || isEmptyObject(data) || isEmptyObject(options)) return data;
 
   const nextConfig: ReplaceConfig = {
     simplify: true,
@@ -58,10 +59,6 @@ const replaceObjectKeys = function f(
   };
 
   const childrenKey = nextConfig.childrenKey || 'children';
-
-  if (isObject) {
-    return replaceKeys(data, options, nextConfig);
-  }
 
   if (isArray(data)) {
     return data.reduce((final: any, curr: any) => {
@@ -79,6 +76,10 @@ const replaceObjectKeys = function f(
 
       return final;
     }, []);
+  }
+
+  if (isObject(data)) {
+    return replaceKeys(data, options, nextConfig);
   }
 
   return data;

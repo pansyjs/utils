@@ -16,7 +16,7 @@ yarn add @pansy/replace-object-keys
 ## 🔨 使用
 
 ```
-import { replaceObjectKeys } from '@pansy/replace-object-keys';
+import replaceObjectKeys from '@pansy/replace-object-keys';
 ```
 
 ### 参数配置
