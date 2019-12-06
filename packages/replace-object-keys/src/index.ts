@@ -1,14 +1,14 @@
-/**
- * 对象键名转换
- */
+import isArray from '@pansy/is-array';
+import isObject from '@pansy/is-object';
+import isEmptyObject from '@pansy/is-empty-object';
 
-interface ReplaceObjectKeyConfig {
+interface ReplaceConfig {
   simplify?: boolean;
   childrenKey?: string;
   filter?: (obj: any) => void;
 }
 
-function rk(data: object[] | object, options: object, config: ReplaceObjectKeyConfig) {
+function replaceKeys(data: object[] | object, options: object, config: ReplaceConfig) {
   const { simplify, childrenKey, filter } = config;
   const params = {}; // 保证键值顺序性
   Object.entries(data).forEach(([key, val]) => {
@@ -18,7 +18,7 @@ function rk(data: object[] | object, options: object, config: ReplaceObjectKeyCo
     let fields = simplify ? (key === childrenKey ? key : options[key]) : options[key] || key;
 
     if (fields) {
-      if (!Array.isArray(fields)) fields = [fields];
+      if (!isArray(fields)) fields = [fields];
 
       fields.forEach((field: string) => {
         Reflect.set(params, field, val);
@@ -30,16 +30,28 @@ function rk(data: object[] | object, options: object, config: ReplaceObjectKeyCo
   return filter ? filter(params) : params;
 }
 
-/** 对象键名替换 */
-const replaceObjectKey = function f(
+/**
+ * 替换对象键名，支持普通对象、对象数组以及树对象，支持过滤功能
+ *
+ * @param data 需要处理的数据
+ * @param options 替换配置
+ * @param config 替换配置
+ * @returns 处理后的数据
+ * @example
+ * ```ts
+ * replaceObjectKeys({ a: 1, b: 2, c: 3 }, { c: 'value' })
+ * // => { value: 3 }
+ * ```
+ */
+const replaceObjectKeys = function f(
   data: object[] | object,
   options: object,
-  config?: ReplaceObjectKeyConfig
+  config?: ReplaceConfig
 ) {
-  // 如果未配置 options a或者 options 没有值 则直接返回对象
-  if (!options || !Object.keys(options).length) return data;
+  // 如果未配置 options 则直接返回数据
+  if (!data || !options || isEmptyObject(options)) return data;
 
-  const nextConfig: ReplaceObjectKeyConfig = {
+  const nextConfig: ReplaceConfig = {
     simplify: true,
     childrenKey: 'children',
     ...config
@@ -47,14 +59,18 @@ const replaceObjectKey = function f(
 
   const childrenKey = nextConfig.childrenKey || 'children';
 
-  if (data && Array.isArray(data)) {
+  if (isObject) {
+    return replaceKeys(data, options, nextConfig);
+  }
+
+  if (isArray(data)) {
     return data.reduce((final: any, curr: any) => {
-      let next = rk(curr, options, nextConfig);
+      let next = replaceKeys(curr, options, nextConfig);
 
       if (next) {
         // 判断是否有子无素
         const children = next[childrenKey];
-        if (children && Array.isArray(children)) {
+        if (children && isArray(children)) {
           next[childrenKey] = f(children, options, nextConfig);
         }
 
@@ -63,9 +79,9 @@ const replaceObjectKey = function f(
 
       return final;
     }, []);
-  } else {
-    return rk(data, options, nextConfig);
   }
+
+  return data;
 };
 
-export default replaceObjectKey;
+export default replaceObjectKeys;
