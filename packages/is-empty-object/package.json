@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-empty-object",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "判断当前值是否为一个空对象",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
-    "@pansy/is-array": "^0.3.0"
+    "@pansy/is-array": "^0.3.1"
   },
   "publishConfig": {
     "access": "public"
