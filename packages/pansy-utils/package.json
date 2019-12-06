@@ -40,6 +40,7 @@
     "@pansy/is-undefined": "^0.3.0",
     "@pansy/number-precision": "^0.3.0",
     "@pansy/policy": "^0.3.0",
+    "@pansy/replace-object-keys": "^0.3.0",
     "@pansy/url-utils": "^0.3.0"
   },
   "publishConfig": {

@@ -93,6 +93,7 @@ import isFunction from '@pansy/is-function';
 | [@pansy/number-precision](https://github.com/pansyjs/utils/tree/master/packages/number-precision/)       | 解决浮动运算问题，避免小数点后产生多数值和计算精度损失                   |
 | [@pansy/utils](https://github.com/pansyjs/utils/tree/master/packages/pansy-utils/)                       | 小巧实用的工具类库                                                       |
 | [@pansy/policy](https://github.com/pansyjs/utils/tree/master/packages/policy/)                           | 解析权限策略，并提供验证功能                                             |
+| [@pansy/replace-object-keys](https://github.com/pansyjs/utils/tree/master/packages/replace-object-keys/) | 替换对象键名，支持普通对象、对象数组以及树对象，支持过滤功能             |
 | [@pansy/url-utils](https://github.com/pansyjs/utils/tree/master/packages/url-utils/)                     | url 相关工具方法                                                         |
 
 <!-- end-directory -->
