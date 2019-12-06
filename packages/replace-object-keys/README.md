@@ -17,45 +17,28 @@ yarn add @pansy/replace-object-keys
 
 ```
 import replaceObjectKeys from '@pansy/replace-object-keys';
-```
 
-### 参数配置
+// 对象
+const objData = { key: '1-1-1', type: 'api', name: 'name-111' };
 
-| 参数    | 描述                              | 类型               | 默认值 |
-| :------ | --------------------------------- | :----------------- | -----: |
-| data    | 需要替换键值名的数据              | object \| object[] |        |
-| options | 指定需要替换的键值名              | object             |        |
-| config  | 配置转换后数据的格式,具体参考下表 | object             |        |
+const result = replaceObjectKey(objData, { name: 'title', key: 'value' });
+// => { value: '1-1-1', title: 'name-111' }
 
-### config
-
-| 参数        | 描述                                                          | 类型                                | 默认值   |
-| :---------- | :------------------------------------------------------------ | :---------------------------------- | :------- |
-| simplify    | 是否按替换配置返回数据，设置为 `false` 时同时返回未被替换的值 | boolean                             | true     |
-| childrenKey | 当数据为 Tree 类型数据时， 指定其 children 的对应的键名       | string                              | children |
-| filter      | 配置数据是否过滤                                              | function(data): object \| undefined |          |
-
-## DEMO
-
-### 基本用法
-
-```js
-import { replaceObjectKey } from '@pansy/replace-object-key';
-
-const treeData = [
+// 数组对象
+const arrData = [
   { key: '1-1-1', type: 'api', name: 'name-111' },
   { key: '1-1-2', type: 'api', name: 'name-112' },
   { key: '1-1-3', type: 'api', name: 'name-113' }
 ];
 
-const result = replaceObjectKey(treeData, { name: 'title', key: 'value' });
-```
+const result = replaceObjectKey(arrData, { name: 'title', key: 'value' });
+// => [
+// =>   { value: '1-1-1', title: 'name-111' },
+// =>   { value: '1-1-2', title: 'name-112' },
+// =>   { value: '1-1-3', title: 'name-113' }
+// => [
 
-### 带过滤用法
-
-```js
-import { replaceObjectKey } from '@pansy/replace-object-key';
-
+// 树对象
 const treeData = [
   { key: '0', type: 'route', name: 'name-0' },
   {
@@ -103,3 +86,19 @@ const result = replaceObjectKey(
   }
 );
 ```
+
+### 参数配置
+
+| 参数    | 描述                              | 类型               | 默认值 |
+| :------ | --------------------------------- | :----------------- | -----: |
+| data    | 需要替换键值名的数据              | object \| object[] |        |
+| options | 指定需要替换的键值名              | object             |        |
+| config  | 配置转换后数据的格式,具体参考下表 | object             |        |
+
+### config
+
+| 参数        | 描述                                                          | 类型                                | 默认值   |
+| ----------- | ------------------------------------------------------------- | ----------------------------------- | -------- |
+| simplify    | 是否按替换配置返回数据，设置为 `false` 时同时返回未被替换的值 | boolean                             | true     |
+| childrenKey | 当数据为 Tree 类型数据时， 指定其 children 的对应的键名       | string                              | children |
+| filter      | 配置数据是否过滤                                              | function(data): object \| undefined |          |
