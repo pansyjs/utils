@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-nil",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "判断当前值是否为null或undefined",
   "author": "Pansy Team",
   "license": "MIT",
