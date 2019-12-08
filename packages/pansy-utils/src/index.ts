@@ -23,6 +23,7 @@ export { default as indent } from '@pansy/indent';
 export { default as dent } from '@pansy/dent';
 export { default as getType } from '@pansy/get-type';
 export { default as groupBy } from '@pansy/group-by';
+export { default as round } from '@pansy/round';
 
 // 对象工具方法
 export { default as replaceObjectKeys } from '@pansy/replace-object-keys';

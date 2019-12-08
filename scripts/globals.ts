@@ -1,7 +1,7 @@
-import { lodash } from '@walrus/shared-utils';
+import { _ } from '@walrus/shared-utils';
 
 interface AnyObject {
-  [key: string]: any
+  [key: string]: any;
 }
 
 /**
@@ -23,9 +23,9 @@ function getGlobals(): AnyObject {
 
   Object.keys(dependencies).forEach((item: string) => {
     if (isPansyPackage(item)) {
-      globals[item] = lodash.camelCase(item.split('/')[1]);
+      globals[item] = _.camelCase(item.split('/')[1]);
     }
-  })
+  });
 
   return globals;
 }
