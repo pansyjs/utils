@@ -1,6 +1,9 @@
 const config = {
   plugins: {
-    release: true
+    release: {
+      mode: 'lerna',
+      organization: 'pansy'
+    }
   }
 };
 
