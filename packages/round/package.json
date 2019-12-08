@@ -1,6 +1,6 @@
 {
   "name": "@pansy/round",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "对传入的数字按给定的精度返回",
   "author": "Pansy Team",
   "license": "MIT",
