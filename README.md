@@ -94,6 +94,7 @@ import isFunction from '@pansy/is-function';
 | [@pansy/utils](https://github.com/pansyjs/utils/tree/master/packages/pansy-utils/)                       | 小巧实用的工具类库                                                       |
 | [@pansy/policy](https://github.com/pansyjs/utils/tree/master/packages/policy/)                           | 解析权限策略，并提供验证功能                                             |
 | [@pansy/replace-object-keys](https://github.com/pansyjs/utils/tree/master/packages/replace-object-keys/) | 替换对象键名，支持普通对象、对象数组以及树对象，支持过滤功能             |
+| [@pansy/round](https://github.com/pansyjs/utils/tree/master/packages/round/)                             | 对传入的数字按给定的精度返回                                             |
 | [@pansy/url-utils](https://github.com/pansyjs/utils/tree/master/packages/url-utils/)                     | url 相关工具方法                                                         |
 
 <!-- end-directory -->

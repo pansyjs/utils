@@ -41,6 +41,7 @@
     "@pansy/number-precision": "^0.3.1",
     "@pansy/policy": "^0.3.1",
     "@pansy/replace-object-keys": "^0.3.1",
+    "@pansy/round": "^0.3.1",
     "@pansy/url-utils": "^0.3.1"
   },
   "publishConfig": {
