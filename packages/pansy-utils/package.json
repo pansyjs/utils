@@ -15,6 +15,7 @@
   },
   "dependencies": {
     "@pansy/array-move": "^0.3.2",
+    "@pansy/common-regexp": "^0.3.2",
     "@pansy/delay": "^0.3.2",
     "@pansy/dent": "^0.3.2",
     "@pansy/get-type": "^0.3.2",

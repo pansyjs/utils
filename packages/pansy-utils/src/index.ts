@@ -37,5 +37,8 @@ export { default as Policy } from '@pansy/policy';
 
 export * from '@pansy/url-utils';
 
+// 常见正则
+export * from '@pansy/common-regexp';
+
 // 一些类型定义
 export * from '@pansy/enhance-type';
