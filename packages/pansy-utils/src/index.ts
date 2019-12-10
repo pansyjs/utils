@@ -24,6 +24,7 @@ export { default as dent } from '@pansy/dent';
 export { default as getType } from '@pansy/get-type';
 export { default as groupBy } from '@pansy/group-by';
 export { default as round } from '@pansy/round';
+export { default as keyCode } from '@pansy/key-code';
 
 // 对象工具方法
 export { default as replaceObjectKeys } from '@pansy/replace-object-keys';

@@ -91,6 +91,7 @@ import isFunction from '@pansy/is-function';
 | [@pansy/is-string](https://github.com/pansyjs/utils/tree/master/packages/is-string/)                     | 判断当前值是否为空                                                       |
 | [@pansy/is-symbol](https://github.com/pansyjs/utils/tree/master/packages/is-symbol/)                     | 判断当前值是否为原始 `Symbol` 或者 `Symbol` 对象                         |
 | [@pansy/is-undefined](https://github.com/pansyjs/utils/tree/master/packages/is-undefined/)               | 判断当前值是否为 undefined                                               |
+| [@walrus/key-code](https://github.com/pansyjs/utils/tree/master/packages/key-code/)                      | 一些按键代码定义和实用程序                                               |
 | [@pansy/number-precision](https://github.com/pansyjs/utils/tree/master/packages/number-precision/)       | 解决浮动运算问题，避免小数点后产生多数值和计算精度损失                   |
 | [@pansy/utils](https://github.com/pansyjs/utils/tree/master/packages/pansy-utils/)                       | 小巧实用的工具类库                                                       |
 | [@pansy/policy](https://github.com/pansyjs/utils/tree/master/packages/policy/)                           | 解析权限策略，并提供验证功能                                             |
