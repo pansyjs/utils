@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-symbol",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "判断当前值是否为原始 `Symbol` 或者 `Symbol` 对象",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
-    "@pansy/get-type": "^0.3.2"
+    "@pansy/get-type": "^0.3.3"
   },
   "publishConfig": {
     "access": "public"

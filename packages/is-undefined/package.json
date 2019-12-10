@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-undefined",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "判断当前值是否为undefined",
   "author": "Pansy Team",
   "license": "MIT",

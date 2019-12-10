@@ -1,6 +1,6 @@
 {
   "name": "@pansy/replace-object-keys",
-  "version": "0.3.2",
+  "version": "0.3.3",
   "description": "替换对象键名，支持普通对象、对象数组以及树对象，支持过滤功能",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,9 +16,9 @@
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
-    "@pansy/is-array": "^0.3.2",
-    "@pansy/is-empty-object": "^0.3.2",
-    "@pansy/is-object": "^0.3.2"
+    "@pansy/is-array": "^0.3.3",
+    "@pansy/is-empty-object": "^0.3.3",
+    "@pansy/is-object": "^0.3.3"
   },
   "publishConfig": {
     "access": "public"
