@@ -39,6 +39,7 @@
     "@pansy/is-string": "^0.3.2",
     "@pansy/is-symbol": "^0.3.2",
     "@pansy/is-undefined": "^0.3.2",
+    "@pansy/key-code": "^0.3.2",
     "@pansy/number-precision": "^0.3.2",
     "@pansy/policy": "^0.3.2",
     "@pansy/replace-object-keys": "^0.3.2",
