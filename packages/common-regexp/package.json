@@ -1,6 +1,6 @@
 {
   "name": "@pansy/common-regexp",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "常见正则表达式",
   "author": "Pansy Team",
   "license": "MIT",

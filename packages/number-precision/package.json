@@ -1,6 +1,6 @@
 {
   "name": "@pansy/number-precision",
-  "version": "0.3.3",
+  "version": "0.3.4",
   "description": "解决浮动运算问题，避免小数点后产生多数值和计算精度损失",
   "author": "Pansy Team",
   "license": "MIT",
