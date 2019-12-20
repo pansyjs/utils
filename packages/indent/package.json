@@ -1,6 +1,6 @@
 {
   "name": "@pansy/indent",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "每一行紧跟前导空白的插入值为多行时，保持缩进。",
   "author": "Pansy Team",
   "license": "MIT",
@@ -16,8 +16,8 @@
     "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
   },
   "dependencies": {
-    "@pansy/is-array": "^0.3.4",
-    "@pansy/is-function": "^0.3.4"
+    "@pansy/is-array": "^0.3.5",
+    "@pansy/is-function": "^0.3.5"
   },
   "publishConfig": {
     "access": "public"

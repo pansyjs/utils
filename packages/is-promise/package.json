@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-promise",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "判断当前值是否为`promise`",
   "author": "Pansy Team",
   "license": "MIT",

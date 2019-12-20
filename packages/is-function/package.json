@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-function",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "判断当前值是否为函数",
   "author": "Pansy Team",
   "license": "MIT",
