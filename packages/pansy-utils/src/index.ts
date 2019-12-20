@@ -16,6 +16,7 @@ export { default as isPromise } from '@pansy/is-promise';
 export { default as isRegExp } from '@pansy/is-regexp';
 export { default as isString } from '@pansy/is-string';
 export { default as isUndefined } from '@pansy/is-undefined';
+export { default as isUrl } from '@pansy/is-url';
 
 // 工具方法
 export { default as deplay } from '@pansy/delay';
