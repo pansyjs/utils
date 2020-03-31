@@ -41,7 +41,8 @@
     "@pansy/replace-object-keys": "^0.3.6",
     "@pansy/round": "^0.3.6",
     "@pansy/url-utils": "^0.3.6",
-    "@pansy/utility-regexps": "^0.3.6"
+    "@pansy/utility-regexps": "^0.3.6",
+    "@pansy/utility-types": "^0.3.6"
   },
   "publishConfig": {
     "access": "public"

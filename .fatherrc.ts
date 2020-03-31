@@ -4,7 +4,7 @@ import { join } from 'path';
 // utils must build before core
 // runtime must build before renderer-react
 const headPkgs: string[] = [
-  'enhance-type',
+  'utility-types',
   'get-type',
   'is-array',
   'is-boolean',

@@ -11,7 +11,7 @@
     "prettier": "walrus prettier",
     "lint": "walrus lint",
     "lint:commit": "walrus commitlint --env HUSKY_GIT_PARAMS",
-    "readme": "node scripts/update-readme.ts",
+    "readme": "node scripts/update-readme.js",
     "release": "yarn --pure-lockfile && walrus release"
   },
   "devDependencies": {

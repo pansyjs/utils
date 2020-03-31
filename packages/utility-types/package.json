@@ -1,7 +1,7 @@
 {
-  "name": "@pansy/enhance-type",
+  "name": "@pansy/utility-types",
   "version": "0.3.6",
-  "description": "增强类型",
+  "description": "实用的类型定义",
   "author": "Pansy Team",
   "license": "MIT",
   "main": "lib/index.js",
