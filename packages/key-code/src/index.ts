@@ -62,6 +62,7 @@ class KeyCode {
       return true;
     }
 
+    // @ts-ignore
     if (window.navigator.userAgent.indexOf('WebKit') !== -1 && keyCode === 0) {
       return true;
     }

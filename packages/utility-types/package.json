@@ -1,0 +1,17 @@
+{
+  "name": "@pansy/utility-types",
+  "version": "0.4.0",
+  "description": "实用的类型定义",
+  "author": "Pansy Team",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}

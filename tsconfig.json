@@ -1,10 +1,9 @@
 {
   "compilerOptions": {
     /* Basic Options */
-    "target": "esnext",
     "module": "esnext",
-    "lib": ["esnext"],
-    "jsx": "react",
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
 
     /* Strict Type-Checking Options */
     "strict": true,

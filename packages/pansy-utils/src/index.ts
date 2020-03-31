@@ -1,3 +1,4 @@
+import * as utilityRegexps from '@pansy/utility-regexps';
 // is
 export { default as isArray } from '@pansy/is-array';
 export { default as isBoolean } from '@pansy/is-boolean';
@@ -39,8 +40,8 @@ export { default as Policy } from '@pansy/policy';
 
 export * from '@pansy/url-utils';
 
-// 常见正则
-export * from '@pansy/common-regexp';
+// 实用的正则
+export { utilityRegexps };
 
 // 一些类型定义
-export * from '@pansy/enhance-type';
+export * from '@pansy/utility-types';

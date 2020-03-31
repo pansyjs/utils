@@ -1,26 +1,27 @@
-import { LiteralUnion } from '@pansy/enhance-type';
+import { LiteralUnion } from '@pansy/utility-types';
 
-export type TGetTypeReturn = LiteralUnion<(
-  'Undefined' |
-  'Null' |
-  'Array' |
-  'String' |
-  'Arguments' |
-  'Function' |
-  'Error' |
-  'Boolean' |
-  'Number' |
-  'Date' |
-  'RegExp' |
-  'Object' |
-  'JSON' |
-  'Math' |
-  'Symbol' |
-  'Map' |
-  'Set' |
-  'WeakMap' |
-  'WeakSet'
-  ), string>
+export type TGetTypeReturn = LiteralUnion<
+  | 'Undefined'
+  | 'Null'
+  | 'Array'
+  | 'String'
+  | 'Arguments'
+  | 'Function'
+  | 'Error'
+  | 'Boolean'
+  | 'Number'
+  | 'Date'
+  | 'RegExp'
+  | 'Object'
+  | 'JSON'
+  | 'Math'
+  | 'Symbol'
+  | 'Map'
+  | 'Set'
+  | 'WeakMap'
+  | 'WeakSet',
+  string
+>;
 
 /**
  * 检测 `value` 的类型
@@ -35,5 +36,5 @@ export type TGetTypeReturn = LiteralUnion<(
  * ```
  */
 export default function getType(value: any): TGetTypeReturn {
-  return Object.prototype.toString.call(value).slice(8, -1)
+  return Object.prototype.toString.call(value).slice(8, -1);
 }
