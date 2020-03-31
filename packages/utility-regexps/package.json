@@ -1,7 +1,7 @@
 {
   "name": "@pansy/utility-regexps",
   "version": "0.3.6",
-  "description": "常见正则表达式",
+  "description": "实用正则表达式",
   "author": "Pansy Team",
   "license": "MIT",
   "main": "lib/index.js",
