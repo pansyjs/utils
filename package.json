@@ -12,7 +12,7 @@
     "lint": "walrus lint",
     "lint:commit": "walrus commitlint --env HUSKY_GIT_PARAMS",
     "readme": "node scripts/update-readme.js",
-    "release": "yarn --pure-lockfile && walrus release"
+    "release": "walrus release"
   },
   "devDependencies": {
     "@birman/test": "^1.1.2",
