@@ -4,17 +4,13 @@
   "description": "判断当前值是否为空",
   "author": "Pansy Team",
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "unpkg": "dist/index.umd.js",
-  "jsdelivr": "dist/index.umd.js",
-  "types": "dist/index.d.ts",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "dist"
+    "lib",
+    "es"
   ],
-  "scripts": {
-    "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
-  },
   "publishConfig": {
     "access": "public"
   }

@@ -11,6 +11,7 @@ node_modules
 
 # build output
 lib
+es
 dist
 
 # IDE

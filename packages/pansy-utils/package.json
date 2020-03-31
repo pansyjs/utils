@@ -2,20 +2,15 @@
   "name": "@pansy/utils",
   "version": "0.3.6",
   "description": "小巧实用的工具类库",
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "unpkg": "dist/index.umd.js",
-  "jsdelivr": "dist/index.umd.js",
-  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
   "files": [
-    "dist"
+    "lib",
+    "es"
   ],
-  "scripts": {
-    "build": "node ../../node_modules/@walrus/pansy/dist/cli.js"
-  },
   "dependencies": {
     "@pansy/array-move": "^0.3.6",
-    "@pansy/common-regexp": "^0.3.6",
     "@pansy/delay": "^0.3.6",
     "@pansy/dent": "^0.3.6",
     "@pansy/get-type": "^0.3.6",
@@ -45,7 +40,8 @@
     "@pansy/policy": "^0.3.6",
     "@pansy/replace-object-keys": "^0.3.6",
     "@pansy/round": "^0.3.6",
-    "@pansy/url-utils": "^0.3.6"
+    "@pansy/url-utils": "^0.3.6",
+    "@pansy/utility-regexps": "^0.3.6"
   },
   "publishConfig": {
     "access": "public"

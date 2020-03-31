@@ -1,0 +1,17 @@
+{
+  "name": "@pansy/utility-regexps",
+  "version": "0.3.6",
+  "description": "常见正则表达式",
+  "author": "Pansy Team",
+  "license": "MIT",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "lib/index.d.ts",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "access": "public"
+  }
+}
