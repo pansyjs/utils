@@ -1,6 +1,6 @@
 {
   "name": "@pansy/is-nan",
-  "version": "0.3.6",
+  "version": "0.4.0",
   "description": "判断当前值是否为`NaN`",
   "author": "Pansy Team",
   "license": "MIT",
