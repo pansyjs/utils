@@ -1,6 +1,6 @@
 {
   "name": "@pansy/key-code",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "一些按键代码定义和实用程序",
   "author": "Pansy Team",
   "license": "MIT",

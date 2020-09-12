@@ -1,6 +1,6 @@
 {
   "name": "@pansy/array-move",
-  "version": "0.4.0",
+  "version": "0.5.0",
   "description": "将数组项移动到其他位置",
   "author": "Pansy Team",
   "license": "MIT",
