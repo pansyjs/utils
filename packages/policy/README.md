@@ -15,7 +15,7 @@ yarn add @pansy/policy
 
 ## 🔨 使用
 
-```
+```ts
 import Policy from '@pansy/policy';
 
 const actions = [
@@ -26,6 +26,8 @@ const actions = [
   { module: 'module2', action: 'action2' },
 ]
 
+// 分隔符支持 '/' 或者 ':', 默认 '/'
+// const policy = new Policy(actions, ':');
 const policy = new Policy(actions);
 
 policy.addPolicy({
