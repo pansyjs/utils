@@ -3413,7 +3413,7 @@
     "@typescript-eslint/types" "4.0.1"
     eslint-visitor-keys "^2.0.0"
 
-"@walrus/cli@^1.3.4":
+"@walrus/cli@1.3.4":
   version "1.3.4"
   resolved "https://registry.yarnpkg.com/@walrus/cli/-/cli-1.3.4.tgz#4411b6a0edf47328545414a4a93da032806ef699"
   integrity sha512-yJP0ABN38xkQNoT4AHo6Egtr/ihVss8iQ6BNaWIVLuVTE0NZs0AERE2NiYJPD6xvjkn67U5Z+ybhwm566kXTCw==
@@ -3471,7 +3471,7 @@
   dependencies:
     prettier "2.1.0"
 
-"@walrus/plugin-release@^1.9.1":
+"@walrus/plugin-release@1.9.1":
   version "1.9.1"
   resolved "https://registry.yarnpkg.com/@walrus/plugin-release/-/plugin-release-1.9.1.tgz#4e5afe928a42999e09d0aafce403183da0e243a9"
   integrity sha512-UQuhqhu9YWw5Xs6p108Ray3TADWl9haSr2CXmbBgmIuQw0MQCrHddkz2Np9iuTDNSlljGNXPEEURsEAhx7NqpA==
@@ -3495,7 +3495,7 @@
     stylelint-declaration-block-no-ignored-properties "2.3.0"
     stylelint-order "4.1.0"
 
-"@walrus/plugin-test@^1.1.0":
+"@walrus/plugin-test@1.1.0":
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/@walrus/plugin-test/-/plugin-test-1.1.0.tgz#851f6de36e91383da485c1647c429752564c44ed"
   integrity sha512-E94oVyrFYvlLqRIew6lBM3wngdFzJ2b9hhFHtQ3RP4rr0SAad7irQYCFsHketkYXMnpRplzT6/hr7FE189jg1A==
@@ -3509,7 +3509,7 @@
   dependencies:
     "@walrus/types" "1.3.4"
 
-"@walrus/preset-lint@^1.1.7":
+"@walrus/preset-lint@1.1.7":
   version "1.1.7"
   resolved "https://registry.yarnpkg.com/@walrus/preset-lint/-/preset-lint-1.1.7.tgz#c2a79522a45c48e033702a2168e6dbb34af07c4a"
   integrity sha512-HZCp+VonYxlcdVNHU4TL/GHwqYWLnmistrKqQqhcfeK4Qw9cqdFJmDAfcvV+4z8uyuvB/KAekiGSJaBT/LwsfQ==
@@ -6297,7 +6297,7 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-father-build@^1.18.5:
+father-build@1.18.5:
   version "1.18.5"
   resolved "https://registry.yarnpkg.com/father-build/-/father-build-1.18.5.tgz#e826dd6add6d1bded20a7dd88a87e7e3efba3334"
   integrity sha512-BlDtFB7YqZ5Pf7Ppp9uXA0Zx3lOiiHJFzej3RiL2oSzzzabVi/T0ZLU4i6i5k7vQkyq89JzR5wyfdzxedJJ0Aw==
@@ -6874,7 +6874,7 @@ globals@^12.1.0:
   dependencies:
     type-fest "^0.8.1"
 
-globby@^11.0.1:
+globby@11.0.1, globby@^11.0.1:
   version "11.0.1"
   resolved "https://registry.yarnpkg.com/globby/-/globby-11.0.1.tgz#9a2bf107a068f3ffeabc49ad702c79ede8cfd357"
   integrity sha512-iH9RmgwCmUJHi2z5o2l3eTtGBtXek1OYlHrbcxOYugyHLmAsZrPj43OtHThd62Buh/Vv6VyCBD2bdyWcGNQqoQ==
@@ -7238,7 +7238,7 @@ humanize-ms@^1.2.1:
   dependencies:
     ms "^2.0.0"
 
-husky@^4.3.0:
+husky@4.3.0:
   version "4.3.0"
   resolved "https://registry.yarnpkg.com/husky/-/husky-4.3.0.tgz#0b2ec1d66424e9219d359e26a51c58ec5278f0de"
   integrity sha512-tTMeLCLqSBqnflBZnlVDhpaIMucSGaYyX6855jM4AguGeWCeSzNdb1mfyWduTZ3pe3SJVvVWGL0jO1iKZVPfTA==
@@ -13247,15 +13247,15 @@ typedarray@^0.0.6:
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
 
+typescript@4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.2.tgz#7ea7c88777c723c681e33bf7988be5d008d05ac2"
+  integrity sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
+
 typescript@^3.7.3:
   version "3.9.7"
   resolved "https://registry.yarnpkg.com/typescript/-/typescript-3.9.7.tgz#98d600a5ebdc38f40cb277522f12dc800e9e25fa"
   integrity sha512-BLbiRkiBzAwsjut4x/dsibSTB6yWpwT5qWmC2OfuCg3GgVQCSgMs4vEctYPhsaGtd0AeuuHMkjZ2h2WG8MSzRw==
-
-typescript@^4.0.2:
-  version "4.0.2"
-  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.0.2.tgz#7ea7c88777c723c681e33bf7988be5d008d05ac2"
-  integrity sha512-e4ERvRV2wb+rRZ/IQeb3jm2VxBsirQLpQhdxplZ2MEzGvDkkMmPglecnNDfSUBivMjP93vRbngYYDQqQ/78bcQ==
 
 uglify-js@^2.8.22:
   version "2.8.29"
