@@ -2774,6 +2774,11 @@
   dependencies:
     "@types/node" ">= 8"
 
+"@pansy/types@^0.2.0":
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/@pansy/types/-/types-0.2.0.tgz#f54f18bcb6ace5d5aa23954f10cb668ab15d42ed"
+  integrity sha512-p4Ii7nIICkFh51th3LHfooEQg8OEeC57raRNZ57UAm1Bmt+Z1EC1qVenznXmrIs1Qmup4LA6dxva7XQ5zVfb9Q==
+
 "@sindresorhus/is@^0.14.0":
   version "0.14.0"
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
@@ -3471,11 +3476,12 @@
   dependencies:
     prettier "2.1.0"
 
-"@walrus/plugin-release@1.9.1":
-  version "1.9.1"
-  resolved "https://registry.yarnpkg.com/@walrus/plugin-release/-/plugin-release-1.9.1.tgz#4e5afe928a42999e09d0aafce403183da0e243a9"
-  integrity sha512-UQuhqhu9YWw5Xs6p108Ray3TADWl9haSr2CXmbBgmIuQw0MQCrHddkz2Np9iuTDNSlljGNXPEEURsEAhx7NqpA==
+"@walrus/plugin-release@1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@walrus/plugin-release/-/plugin-release-1.12.1.tgz#254d01675b155adc004813fa05660725d3af13e1"
+  integrity sha512-MUBM4kQ+klJUUETRi/nI84EJXefW1ESkK0ACYZ2A+4dQu0qGe0ld5n8b443HIIDU9j5ek80RulglfbE26AXjhw==
   dependencies:
+    "@pansy/types" "^0.2.0"
     escape-goat "^3.0.0"
     inquirer "^7.3.3"
     lerna "^3.22.1"
