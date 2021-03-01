@@ -20,7 +20,7 @@
     "@walrus/plugin-release": "1.9.1",
     "@walrus/plugin-test": "1.1.0",
     "@walrus/preset-lint": "1.1.7",
-    "father-build": "1.18.5",
+    "father-build": "1.19.2",
     "globby": "11.0.1",
     "husky": "4.3.7",
     "typescript": "4.1.3"
