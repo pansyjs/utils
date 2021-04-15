@@ -22,7 +22,7 @@
     "@walrus/preset-lint": "1.1.7",
     "father-build": "1.19.2",
     "globby": "11.0.3",
-    "husky": "5.1.2",
+    "husky": "6.0.0",
     "typescript": "4.2.4"
   },
   "husky": {
