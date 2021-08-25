@@ -7015,10 +7015,10 @@ fastq@^1.6.0:
   dependencies:
     reusify "^1.0.4"
 
-father-build@1.19.6:
-  version "1.19.6"
-  resolved "https://registry.yarnpkg.com/father-build/-/father-build-1.19.6.tgz#d84b5f8d17e719ffab6b378e8100657fea22a9d3"
-  integrity sha512-InxKSw8hQi1BAiKUyK/bgDuY3O8CoRqN2k4u3Aa16sDrk05iCHwyLSk/aVN/MkuS4fEPPwECwgisVDhUpXxJvA==
+father-build@1.19.8:
+  version "1.19.8"
+  resolved "https://registry.yarnpkg.com/father-build/-/father-build-1.19.8.tgz#ec196c3d8daefccfb28f59265bb7e3e7610bf111"
+  integrity sha512-OF5Y8OTXi+dSitMGXuWqB2gBjir/84vlFXyL4qe0zhDO9pdpmE5hVIT7ZXYmxdzSmMBw5hYaBz6Q4XKRYT8y9Q==
   dependencies:
     "@babel/core" "7.12.3"
     "@babel/plugin-proposal-class-properties" "7.12.1"
