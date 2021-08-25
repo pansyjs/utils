@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.6.0](https://github.com/pansyjs/utils/compare/@pansy/utility-regexps@0.5.0...@pansy/utility-regexps@0.6.0) (2021-08-25)
+
+
+### Features
+
+* **utility-regexps:** add idCardRegexp ([78fe09f](https://github.com/pansyjs/utils/commit/78fe09fa3853d17c86ee6eb8c5c5182989847bf1))
+
+
+
+
+
 # 0.5.0 (2020-09-12)
 
 ### Features
