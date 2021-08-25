@@ -2,6 +2,9 @@
   "version": "independent",
   "npmClient": "yarn",
   "useWorkspaces": true,
+  "packages": [
+    "packages/*"
+  ],
   "changelog": {
     "repo": "@pansy/utils",
     "labels": {
