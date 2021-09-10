@@ -23,7 +23,7 @@
     "father-build": "1.19.8",
     "globby": "11.0.3",
     "husky": "5.1.2",
-    "typescript": "4.3.5"
+    "typescript": "4.4.3"
   },
   "husky": {
     "hooks": {
