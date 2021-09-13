@@ -19,3 +19,4 @@ dist
 .vscode
 
 .DS_Store
+install-state.gz

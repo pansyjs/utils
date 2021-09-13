@@ -4277,7 +4277,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@pansy/utility-regexps@0.7.0, @pansy/utility-regexps@workspace:packages/utility-regexps":
+"@pansy/utility-regexps@0.6.0, @pansy/utility-regexps@workspace:packages/utility-regexps":
   version: 0.0.0-use.local
   resolution: "@pansy/utility-regexps@workspace:packages/utility-regexps"
   languageName: unknown
@@ -4324,7 +4324,7 @@ __metadata:
     "@pansy/replace-object-keys": 0.5.0
     "@pansy/round": 0.5.0
     "@pansy/url-utils": 0.5.0
-    "@pansy/utility-regexps": 0.7.0
+    "@pansy/utility-regexps": 0.6.0
     "@pansy/utility-types": 0.5.0
   languageName: unknown
   linkType: soft
