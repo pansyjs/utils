@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.7.0](https://github.com/pansyjs/utils/compare/@pansy/utility-regexps@0.5.0...@pansy/utility-regexps@0.7.0) (2021-09-13)
+
+
+### Bug Fixes
+
+* **utility-regexps:** 修复身份证号年份验证错误 ([407be57](https://github.com/pansyjs/utils/commit/407be57e2228bad77b13097c4b3053f180a6b634))
+
+
+### Features
+
+* **utility-regexps:** add idCardRegexp ([78fe09f](https://github.com/pansyjs/utils/commit/78fe09fa3853d17c86ee6eb8c5c5182989847bf1))
+
+
+
+
+
 # [0.6.0](https://github.com/pansyjs/utils/compare/@pansy/utility-regexps@0.5.0...@pansy/utility-regexps@0.6.0) (2021-08-25)
 
 
