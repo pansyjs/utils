@@ -4339,7 +4339,7 @@ __metadata:
     "@walrus/test": 1.3.0
     father-build: 1.20.0
     globby: 12.0.2
-    husky: 5.1.2
+    husky: 7.0.4
     typescript: 4.4.3
   languageName: unknown
   linkType: soft
@@ -10376,12 +10376,12 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"husky@npm:5.1.2":
-  version: 5.1.2
-  resolution: "husky@npm:5.1.2"
+"husky@npm:7.0.4":
+  version: 7.0.4
+  resolution: "husky@npm:7.0.4"
   bin:
     husky: lib/bin.js
-  checksum: 0c4aa93defd7c81ce245b10d5a6c63a6deb3495cdcfa5ca9a91f1cecc1c12dba8aa30e97b29fb2861ea1036ec82fc9ea975b738ffc4d0f1a164774d4fea4cd95
+  checksum: c6ec4af63da2c9522da8674a20ad9b48362cc92704896cc8a58c6a2a39d797feb2b806f93fbd83a6d653fbdceb2c3b6e0b602c6b2e8565206ffc2882ef7db9e9
   languageName: node
   linkType: hard
 
