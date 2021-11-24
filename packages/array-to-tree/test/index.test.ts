@@ -17,6 +17,7 @@ const parentIdsList = [
 ];
 
 describe('arrayToTree', () => {
+
   it('parentId', () => {
     const treeData = [
       {
@@ -52,6 +53,28 @@ describe('arrayToTree', () => {
     expect(arrayToTree(parentIdList).treeData).toEqual(treeData);
   });
 
+  it('parentId - 转换数据', () => {
+    const source = [
+      { id: '001', parentId: '' },
+      { id: '002', parentId: '' },
+    ];
+
+    const { treeData } = arrayToTree(source, {
+      transformItem: (item) => {
+        return {
+          ...item,
+          key: item.id,
+        }
+      }
+    })
+
+    expect(treeData).toEqual([
+      { id: '001', key: '001', parentId: '', parentIds: [] },
+      { id: '002', key: '002', parentId: '', parentIds: [] },
+    ]);
+  });
+
+
   it('parentIds', () => {
     const treeData = [
       {
@@ -71,5 +94,27 @@ describe('arrayToTree', () => {
       { id: '002', parentIds: [] },
     ];
     expect(arrayToTree(parentIdsList, { mode: 'parentIds' }).treeData).toEqual(treeData);
+  });
+
+  it('parentIds - 转换数据', () => {
+    const source = [
+      { id: '001', parentIds: [] },
+      { id: '002', parentIds: [] },
+    ];
+
+    const { treeData } = arrayToTree(source, {
+      mode: 'parentIds',
+      transformItem: (item) => {
+        return {
+          ...item,
+          key: item.id,
+        }
+      }
+    })
+
+    expect(treeData).toEqual([
+      { id: '001', key: '001', parentIds: [] },
+      { id: '002', key: '002', parentIds: [] },
+    ]);
   });
 });

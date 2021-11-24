@@ -1,3 +1,4 @@
+import isFunction from '@pansy/is-function';
 import { Options, IdVal, Workspace } from './types';
 import { getFieldValue } from './utils';
 
@@ -31,6 +32,10 @@ export function arrayToTree<T extends object>(
   if (mode === 'parentId') {
     list = list.map(item => {
       const pIds = getParentIds(item);
+
+      if (isFunction(transformItem)) {
+        item = transformItem(item);
+      }
 
       return {
         ...item,
@@ -95,7 +100,15 @@ export function arrayToTree<T extends object>(
       workspace[depth] = {};
     }
 
-    workspace[depth][id] = data;
+    let latestData = {
+      ...data
+    };
+
+    if (mode === 'parentIds' && isFunction(transformItem)) {
+      latestData = transformItem(data as unknown as T);
+    }
+
+    workspace[depth][id] = latestData;
 
     return workspace;
   }
