@@ -14,7 +14,8 @@
     "readme": "node scripts/update-readme.js",
     "test:policy": "walrus test packages/policy",
     "test:array-to-tree": "walrus-test packages/array-to-tree",
-    "release": "release --commit-message 'chore(release): publish'"
+    "prerelease": "npm run build",
+    "release": "release --commit-message 'chore(release): publish' --skip-build"
   },
   "devDependencies": {
     "@walrus/cli": "1.3.4",
