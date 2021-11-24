@@ -1,6 +1,6 @@
 <h1 align="center">@pansy/array-to-tree</h1>
 
-> 将普通的数组（带有指向父节点的指针）转换为嵌套的数据结构
+> 将普通的数组（带有指向父节点的指针）转换为嵌套的数据结构，支持方便的查找到任意节点的数据
 
 ## 📦 安装
 
@@ -28,7 +28,7 @@ const source = [
   { id: '001002', parentId: '001' },
 ];
 
-arrayToTree(source);
+arrayToTree(source).treeData;
 
 // 结果如下
 [
@@ -77,7 +77,7 @@ const source = [
   { id: '001002', parentIds: ['001'] },
 ];
 
-arrayToTree(source);
+arrayToTree(source).treeData;
 
 // 转换结果如下
 [
@@ -97,4 +97,35 @@ arrayToTree(source);
   },
   { id: '002', parentIds: [] },
 ];
+```
+
+## API
+
+`arrayToTree(data, [options])`
+
+### 参数
+
+- Array data: 需要处理的数组数据
+- Object options: 包含以下字段的对象：
+  - rootId (string | number) 根节点的Id值
+  - fieldNames (object)
+    - id (string)
+    - parentId (string)
+    - parentIds (string)
+    - children (string)
+  - mode (string) 创建树的模式
+  - getParentId (function) 获取父节点唯一标识的值
+  - getId(function) 获取唯一标识的值
+  - transformItem(function) 在转换之前处理每项的数据
+
+### 返回
+
+```ts
+{
+  // 转换后的数据
+  treeData: array[];
+  // 树每个节点的以 id 为 key 的对象
+  treeMap: object;
+}
+
 ```
