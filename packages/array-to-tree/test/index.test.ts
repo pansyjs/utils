@@ -49,7 +49,7 @@ describe('arrayToTree', () => {
         parentIds: []
       },
     ];
-    expect(arrayToTree(parentIdList)).toEqual(treeData);
+    expect(arrayToTree(parentIdList).treeData).toEqual(treeData);
   });
 
   it('parentIds', () => {
@@ -70,6 +70,6 @@ describe('arrayToTree', () => {
       },
       { id: '002', parentIds: [] },
     ];
-    expect(arrayToTree(parentIdsList, { mode: 'parentIds' })).toEqual(treeData);
+    expect(arrayToTree(parentIdsList, { mode: 'parentIds' }).treeData).toEqual(treeData);
   });
 });

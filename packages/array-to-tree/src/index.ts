@@ -158,5 +158,15 @@ export function arrayToTree<T extends object>(
 
   const treeData = buildTree(workspace);
 
-  return treeData;
+  const treeMap = workspace.reduce((prev, cur) => {
+    return {
+      ...prev,
+      ...cur
+    }
+  }, {});
+
+  return {
+    treeData,
+    treeMap,
+  }
 }

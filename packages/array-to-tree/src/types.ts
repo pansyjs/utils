@@ -15,7 +15,7 @@ export type CreateTreeMode = 'parentId' | 'parentIds'
 
 export interface Options<T extends object> {
   /**
-   * 根节点的ID
+   * 根节点的Id值
    * @default ''
    */
   rootId?: IdVal;
