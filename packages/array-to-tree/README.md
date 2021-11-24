@@ -105,14 +105,14 @@ arrayToTree(source).treeData;
 
 ### 参数
 
-- Array data: 需要处理的数组数据
+- Array data: 需要转换的数组
 - Object options: 包含以下字段的对象：
-  - rootId (string | number) 根节点的Id值
+  - rootId (string | number) 根节点的值，默认`''`
   - fieldNames (object)
-    - id (string)
-    - parentId (string)
-    - parentIds (string)
-    - children (string)
+    - id (string) 自定义节点 id 的字段
+    - parentId (string) 自定义节点 parentId 的字段
+    - parentIds (string) 自定义节点 parentIds 的字段
+    - children (string)  自定义节点 children 的字段
   - mode (string) 创建树的模式
   - getParentId (function) 获取父节点唯一标识的值
   - getId(function) 获取唯一标识的值

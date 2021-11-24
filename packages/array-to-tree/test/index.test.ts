@@ -1,24 +1,15 @@
 import { arrayToTree } from '../src';
 
-const parentIdList = [
-  { id: '001', parentId: '' },
-  { id: '002', parentId: '' },
-  { id: '001001', parentId: '001' },
-  { id: '001001001', parentId: '001001' },
-  { id: '001002', parentId: '001' },
-];
-
-const parentIdsList = [
-  { id: '001', parentIds: [] },
-  { id: '002', parentIds: [] },
-  { id: '001001', parentIds: ['001'] },
-  { id: '001001001', parentIds: ['001', '001001'] },
-  { id: '001002', parentIds: ['001'] },
-];
-
 describe('arrayToTree', () => {
+  it('mode 为 parentId 时', () => {
+    const source = [
+      { id: '001', parentId: '' },
+      { id: '002', parentId: '' },
+      { id: '001001', parentId: '001' },
+      { id: '001001001', parentId: '001001' },
+      { id: '001002', parentId: '001' },
+    ];
 
-  it('parentId', () => {
     const treeData = [
       {
         id: '001',
@@ -50,10 +41,10 @@ describe('arrayToTree', () => {
         parentIds: []
       },
     ];
-    expect(arrayToTree(parentIdList).treeData).toEqual(treeData);
+    expect(arrayToTree(source).treeData).toEqual(treeData);
   });
 
-  it('parentId - 转换数据', () => {
+  it('使用 transformItem', () => {
     const source = [
       { id: '001', parentId: '' },
       { id: '002', parentId: '' },
@@ -74,8 +65,15 @@ describe('arrayToTree', () => {
     ]);
   });
 
+  it('mode 为 parentIds 时', () => {
+    const source = [
+      { id: '001', parentIds: [] },
+      { id: '002', parentIds: [] },
+      { id: '001001', parentIds: ['001'] },
+      { id: '001001001', parentIds: ['001', '001001'] },
+      { id: '001002', parentIds: ['001'] },
+    ];
 
-  it('parentIds', () => {
     const treeData = [
       {
         id: '001',
@@ -93,28 +91,6 @@ describe('arrayToTree', () => {
       },
       { id: '002', parentIds: [] },
     ];
-    expect(arrayToTree(parentIdsList, { mode: 'parentIds' }).treeData).toEqual(treeData);
-  });
-
-  it('parentIds - 转换数据', () => {
-    const source = [
-      { id: '001', parentIds: [] },
-      { id: '002', parentIds: [] },
-    ];
-
-    const { treeData } = arrayToTree(source, {
-      mode: 'parentIds',
-      transformItem: (item) => {
-        return {
-          ...item,
-          key: item.id,
-        }
-      }
-    })
-
-    expect(treeData).toEqual([
-      { id: '001', key: '001', parentIds: [] },
-      { id: '002', key: '002', parentIds: [] },
-    ]);
+    expect(arrayToTree(source, { mode: 'parentIds' }).treeData).toEqual(treeData);
   });
 });
