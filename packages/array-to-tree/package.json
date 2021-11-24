@@ -1,0 +1,20 @@
+{
+  "name": "@pansy/array-to-tree",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": " 将普通的数组（带有指向父节点的指针）转换为嵌套的数据结构",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "dependencies": {
+    "@pansy/is-function": "0.5.0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "packageManager": "yarn@3.0.1"
+}
