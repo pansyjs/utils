@@ -4,7 +4,7 @@ import isFunction from '@pansy/is-function';
 /**
  * 获取唯一表示的值
  */
-export function getFieldValue<D extends object>(
+export function getFieldValue<D>(
   data: D,
   opts: {
     fieldName: string,

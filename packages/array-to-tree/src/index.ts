@@ -45,6 +45,11 @@ export function arrayToTree<T extends object>(
     });
   }
 
+  /**
+   * 获取某个节点父节点的的数组
+   * @param data
+   * @returns
+   */
   function getParentIds(data: T) {
     let parentId = getFieldValue(data, {
       fieldName: parentIdFieldName,
@@ -82,9 +87,14 @@ export function arrayToTree<T extends object>(
     return ids.reverse();
   }
 
-  function buildWorkspace<D extends object>(
+  /**
+   * 获取树深度为key的数组
+   * @param workspace
+   * @param data
+   * @returns
+   */
+  function buildWorkspace<D>(
     workspace: Workspace<D>,
-    id: IdVal,
     data: D,
   ) {
     let parentIds = getFieldValue<D>(data, {
@@ -109,7 +119,21 @@ export function arrayToTree<T extends object>(
       latestData = transformItem(data as unknown as T);
     }
 
-    workspace[depth][id] = latestData;
+    if (latestData) {
+      let pId = parentIds[parentIds.length - 1];
+
+      if (parentIds.length === 0) {
+        pId = 'rootId';
+      }
+
+      if (isNil(pId)) return workspace;
+
+      if (pId && !workspace[depth][pId]) {
+        workspace[depth][pId] = [latestData];
+      } else {
+        workspace[depth][pId].push(latestData);
+      }
+    }
 
     return workspace;
   }
@@ -124,30 +148,51 @@ export function arrayToTree<T extends object>(
   ) {
     for (let i = workspace.length - 1; i > 0; i--) {
       Object.keys(workspace[i]).forEach((id) => {
-        const item = workspace[i][id];
+        const items = workspace[i][id] ?? [];
 
-        let parentIds = getFieldValue<D>(item, {
-          fieldName: parentIdsFieldName
-        }) as IdVal[];
+        items.forEach((item) => {
+          let pIds = getFieldValue<D>(item, {
+            fieldName: parentIdsFieldName
+          }) as IdVal[];
 
-        if (parentIds && parentIds.length > 0) {
-          const parentId = parentIds[parentIds.length -1];
+          if (pIds && pIds.length > 0) {
+            const pId = pIds[pIds.length -1];
 
-          const parent = workspace[i - 1][parentId];
+            // 获取父节点
+            const pItems = Object.keys(workspace[i - 1])
+              .reduce<D[]>((prev, cur) => {
+                return [
+                  ...prev,
+                  ...workspace[i - 1][cur]
+                ]
+              }, [])
 
-          if (parent) {
-            if (parent[`${childrenFieldName}`]) {
-              parent[`${childrenFieldName}`].push(item);
-            } else {
-              parent[`${childrenFieldName}`] = [item];
+            const parent = pItems.find((item) => {
+              return pId === item['id'];
+            });
+
+            if (parent) {
+              if (parent[`${childrenFieldName}`]) {
+                parent[`${childrenFieldName}`].push(item);
+              } else {
+                parent[`${childrenFieldName}`] = [item];
+              }
             }
           }
-        }
+        })
       })
     }
 
     if (workspace && workspace.length > 0) {
-      return Object.keys(workspace[0]).map((id) => workspace[0][id]);
+      const roots = Object.keys(workspace[0])
+        .reduce<D[]>((prev, cur) => {
+          return [
+            ...prev,
+            ...workspace[0][cur],
+          ]
+        }, []);
+
+      return roots;
     } else {
       return [];
     }
@@ -156,14 +201,7 @@ export function arrayToTree<T extends object>(
   const workspace = list.reduce<Workspace<T>>(
     (prev, cur) => {
       if (cur) {
-        const id = getFieldValue(cur, {
-          fieldName: idFieldName,
-          getValue: getId,
-        });
-
-        if (id) {
-          prev = buildWorkspace(prev, id, cur);
-        }
+        prev = buildWorkspace(prev, cur);
       }
       return prev;
     },

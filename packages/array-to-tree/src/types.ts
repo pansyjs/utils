@@ -1,10 +1,10 @@
 /** 唯一表示的类型 */
 export type IdVal = string | number;
 
-/**  */
 export type GetValue<T> = (item: T) => any;
 
-export type Workspace<T> = Record<IdVal, T>[]
+/**  */
+export type Workspace<T> = Record<IdVal, T[]>[]
 
 /**
  * 创建树的两种模式
