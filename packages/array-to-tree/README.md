@@ -107,15 +107,13 @@ arrayToTree(source).treeData;
 
 - Array data: 需要转换的数组
 - Object options: 包含以下字段的对象：
-  - rootId (string | number) 根节点的值，默认`''`
+  - rootId (string | number) 根节点的值，默认: `''`
   - fieldNames (object)
-    - id (string) 自定义节点 id 的字段
-    - parentId (string) 自定义节点 parentId 的字段
-    - parentIds (string) 自定义节点 parentIds 的字段
-    - children (string)  自定义节点 children 的字段
-  - mode (string) 创建树的模式
-  - getParentId (function) 获取父节点唯一标识的值
-  - getId(function) 获取唯一标识的值
+    - id (string) 自定义节点 id 的字段，默认: `id`
+    - parentId (string) 自定义节点 parentId 的字段，默认: `parentId`
+    - parentIds (string) 自定义节点 parentIds 的字段，默认: `parentIds`
+    - children (string)  自定义节点 children 的字段，默认: `children`
+  - mode (string) 创建树的模式，默认: `parentId`
   - transformItem(function) 在转换之前处理每项的数据
 
 ### 返回
