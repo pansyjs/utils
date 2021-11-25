@@ -1,3 +1,4 @@
+import isNil from '@pansy/is-nil';
 import isFunction from '@pansy/is-function';
 import { Options, IdVal, Workspace } from './types';
 import { getFieldValue } from './utils';
@@ -52,7 +53,7 @@ export function arrayToTree<T extends object>(
 
     const ids: string[] = [];
 
-    if (parentId && parentId !== rootId) {
+    if (!isNil(parentId) && parentId !== rootId) {
       ids.push(parentId);
     }
 
@@ -73,7 +74,7 @@ export function arrayToTree<T extends object>(
         getValue: getParentId,
       });
 
-      if (parentId && parentId !== rootId) {
+      if (!isNil(parentId) && parentId !== rootId) {
         ids.push(parentId);
       }
     }
