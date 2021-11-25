@@ -1,7 +1,6 @@
-import isNil from '@pansy/is-nil';
 import isFunction from '@pansy/is-function';
-import { Options, IdVal, Workspace } from './types';
-import { getParentIds } from './utils';
+import { Options, Workspace } from './types';
+import { getParentIds, buildTree, buildWorkspace } from './utils';
 
 export function arrayToTree<T extends object>(
   list: T[],
@@ -47,125 +46,24 @@ export function arrayToTree<T extends object>(
     });
   }
 
-  /**
-   * 获取树深度为key的数组
-   * @param workspace
-   * @param data
-   * @returns
-   */
-  function buildWorkspace<D>(
-    workspace: Workspace<D>,
-    data: D,
-  ) {
-
-    let parentIds = data[parentIdsFieldName] as IdVal[];
-
-    if (!Array.isArray(parentIds)) {
-      parentIds = [];
-    }
-
-    const depth = parentIds.length;
-
-    if (!workspace[depth]) {
-      workspace[depth] = {};
-    }
-
-    let latestData = {
-      ...data
-    };
-
-    if (mode === 'parentIds' && isFunction(transformItem)) {
-      latestData = transformItem(data as unknown as T);
-    }
-
-    if (latestData) {
-      let pId = parentIds[parentIds.length - 1];
-
-      if (parentIds.length === 0) {
-        pId = 'rootId';
-      }
-
-      if (isNil(pId)) return workspace;
-
-      if (pId && !workspace[depth][pId]) {
-        workspace[depth][pId] = [latestData];
-      } else {
-        workspace[depth][pId].push(latestData);
-      }
-    }
-
-    return workspace;
-  }
-
-  /**
-   * 构建树
-   * @param workspace
-   * @returns
-   */
-  function buildTree<D extends object>(
-    workspace: Workspace<D>,
-  ) {
-    for (let i = workspace.length - 1; i > 0; i--) {
-      Object.keys(workspace[i]).forEach((id) => {
-        const items = workspace[i][id] ?? [];
-
-        items.forEach((item) => {
-          let pIds = item[parentIdsFieldName];
-
-          if (pIds && pIds.length > 0) {
-            const pId = pIds[pIds.length -1];
-
-            // 获取父节点
-            const pItems = Object.keys(workspace[i - 1])
-              .reduce<D[]>((prev, cur) => {
-                return [
-                  ...prev,
-                  ...workspace[i - 1][cur]
-                ]
-              }, [])
-
-            const parent = pItems.find((item) => {
-              return pId === item['id'];
-            });
-
-            if (parent) {
-              if (parent[`${childrenFieldName}`]) {
-                parent[`${childrenFieldName}`].push(item);
-              } else {
-                parent[`${childrenFieldName}`] = [item];
-              }
-            }
-          }
-        })
-      })
-    }
-
-    if (workspace && workspace.length > 0) {
-      const roots = Object.keys(workspace[0])
-        .reduce<D[]>((prev, cur) => {
-          return [
-            ...prev,
-            ...workspace[0][cur],
-          ]
-        }, []);
-
-      return roots;
-    } else {
-      return [];
-    }
-  }
-
   const workspace = list.reduce<Workspace<T>>(
     (prev, cur) => {
       if (cur) {
-        prev = buildWorkspace(prev, cur);
+        prev = buildWorkspace(prev, cur, {
+          mode,
+          transformItem,
+          parentIdsFieldName,
+        });
       }
       return prev;
     },
     [],
   );
 
-  const treeData = buildTree(workspace);
+  const treeData = buildTree(workspace, {
+    childrenFieldName,
+    parentIdsFieldName,
+  });
 
   const treeMap = workspace.reduce((prev, cur) => {
     return {
