@@ -1,7 +1,9 @@
 /** 唯一表示的类型 */
 export type IdVal = string | number;
 
-/**  */
+/**
+ * [{ pid: [{...}, {...}] }]
+ */
 export type Workspace<T> = Record<IdVal, T[]>[]
 
 /**

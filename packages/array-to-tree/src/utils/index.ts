@@ -1,0 +1,1 @@
+export { getParentIds } from './getParentIds';

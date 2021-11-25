@@ -1,6 +1,7 @@
 import isNil from '@pansy/is-nil';
 import isFunction from '@pansy/is-function';
 import { Options, IdVal, Workspace } from './types';
+import { getParentIds } from './utils';
 
 export function arrayToTree<T extends object>(
   list: T[],
@@ -29,50 +30,21 @@ export function arrayToTree<T extends object>(
   // 如果使用 id-parentId 形式的数据，则将其转换成parentIds的数据机构
   if (mode === 'parentId') {
     list = list.map(item => {
-      const pIds = getParentIds(item);
-
       if (isFunction(transformItem)) {
         item = transformItem(item);
       }
+
+      const pIds = getParentIds(list, item, {
+        rootId,
+        idFieldName,
+        parentIdFieldName,
+      });
 
       return {
         ...item,
         parentIds: pIds,
       }
     });
-  }
-
-  /**
-   * 获取某个节点父节点的的数组
-   * @param data
-   * @returns
-   */
-  function getParentIds(data: T) {
-    let parentId = data[parentIdFieldName];
-
-    const ids: string[] = [];
-
-    if (!isNil(parentId) && parentId !== rootId) {
-      ids.push(parentId);
-    }
-
-    while (parentId !== rootId) {
-      const info = list.find((item) => {
-        let id = item[idFieldName];
-
-        return id === parentId;
-      });
-
-      if (!info) break;
-
-      parentId = info[parentIdFieldName]
-
-      if (!isNil(parentId) && parentId !== rootId) {
-        ids.push(parentId);
-      }
-    }
-
-    return ids.reverse();
   }
 
   /**
