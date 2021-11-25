@@ -1,8 +1,6 @@
 /** 唯一表示的类型 */
 export type IdVal = string | number;
 
-export type GetValue<T> = (item: T) => any;
-
 /**  */
 export type Workspace<T> = Record<IdVal, T[]>[]
 
@@ -37,15 +35,6 @@ export interface Options<T extends object> {
    * @default 'parentId'
    */
   mode?: CreateTreeMode;
-  /**
-   * 获取父节点唯一标识的值
-   */
-  getParentId?: GetValue<T>;
-  /**
-   * 获取唯一标识的值，
-   * 例如 id
-   */
-  getId?: GetValue<T>;
   /**
    * 转换每项的数据
    */

@@ -1,7 +1,6 @@
 import isNil from '@pansy/is-nil';
 import isFunction from '@pansy/is-function';
 import { Options, IdVal, Workspace } from './types';
-import { getFieldValue } from './utils';
 
 export function arrayToTree<T extends object>(
   list: T[],
@@ -11,8 +10,6 @@ export function arrayToTree<T extends object>(
     rootId = '',
     fieldNames,
     mode = 'parentId',
-    getId,
-    getParentId,
     transformItem,
   } = options;
 
@@ -51,10 +48,7 @@ export function arrayToTree<T extends object>(
    * @returns
    */
   function getParentIds(data: T) {
-    let parentId = getFieldValue(data, {
-      fieldName: parentIdFieldName,
-      getValue: getParentId,
-    });
+    let parentId = data[parentIdFieldName];
 
     const ids: string[] = [];
 
@@ -64,20 +58,14 @@ export function arrayToTree<T extends object>(
 
     while (parentId !== rootId) {
       const info = list.find((item) => {
-        const id = getFieldValue(item, {
-          fieldName: idFieldName,
-          getValue: getId,
-        });
+        let id = item[idFieldName];
 
         return id === parentId;
       });
 
       if (!info) break;
 
-      parentId = getFieldValue(info, {
-        fieldName: parentIdFieldName,
-        getValue: getParentId,
-      });
+      parentId = info[parentIdFieldName]
 
       if (!isNil(parentId) && parentId !== rootId) {
         ids.push(parentId);
@@ -97,9 +85,8 @@ export function arrayToTree<T extends object>(
     workspace: Workspace<D>,
     data: D,
   ) {
-    let parentIds = getFieldValue<D>(data, {
-      fieldName: parentIdsFieldName
-    }) as IdVal[];
+
+    let parentIds = data[parentIdsFieldName] as IdVal[];
 
     if (!Array.isArray(parentIds)) {
       parentIds = [];
@@ -151,9 +138,7 @@ export function arrayToTree<T extends object>(
         const items = workspace[i][id] ?? [];
 
         items.forEach((item) => {
-          let pIds = getFieldValue<D>(item, {
-            fieldName: parentIdsFieldName
-          }) as IdVal[];
+          let pIds = item[parentIdsFieldName];
 
           if (pIds && pIds.length > 0) {
             const pId = pIds[pIds.length -1];
