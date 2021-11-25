@@ -41,4 +41,8 @@ export interface Options<T extends object> {
    * 转换每项的数据
    */
   transformItem?: (item: T) => any;
+  /**
+   * 自定义查询树节点信息的Key
+   */
+  getTreeMapKey?: (item: T) => string;
 }

@@ -55,6 +55,7 @@ describe('arrayToTree', () => {
 
     const { treeData } = arrayToTree(source, {
       rootId: '0',
+      getTreeMapKey: (item) => `${item['parentId']}_${item['id']}`
     });
 
     expect(treeData).toEqual([

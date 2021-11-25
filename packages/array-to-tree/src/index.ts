@@ -11,12 +11,14 @@ export function arrayToTree<T extends object>(
     fieldNames,
     mode = 'parentId',
     transformItem,
+    getTreeMapKey,
   } = options;
 
   const idFieldName = fieldNames?.id ?? 'id';
   const parentIdFieldName = fieldNames?.parentId ?? 'parentId';
-  let parentIdsFieldName = fieldNames?.parentIds ?? 'parentIds';
   const childrenFieldName = fieldNames?.children ?? 'children';
+
+  let parentIdsFieldName = fieldNames?.parentIds ?? 'parentIds';
 
   if (mode === 'parentId') {
     parentIdsFieldName = 'parentIds';
@@ -65,12 +67,28 @@ export function arrayToTree<T extends object>(
     parentIdsFieldName,
   });
 
-  const treeMap = workspace.reduce((prev, cur) => {
-    return {
-      ...prev,
-      ...cur
-    }
-  }, {});
+  const treeMap = Object.keys(workspace)
+    .reduce<Record<string, T>>((prev, cur) => {
+      const itemMap = Object.keys(workspace[cur])
+        .reduce((prev1, cur1) => {
+          const infos =  workspace[cur][cur1];
+
+          infos.forEach((info: T) => {
+            const key = isFunction(getTreeMapKey)
+              ? getTreeMapKey(info)
+              : info[idFieldName];
+
+            prev1[key] = info;
+          })
+
+          return prev1;
+        }, {});
+
+      return {
+        ...prev,
+        ...itemMap
+      };
+    }, {});
 
   return {
     treeData,
