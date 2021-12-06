@@ -7,8 +7,7 @@ function sleep(ms: number) {
 describe('debouncePromise', () => {
   it('returns the result of a single operation ', async () => {
     const debounced = debouncePromise(async (value) => value, 100);
-    const promise = debounced('foo');
-    const result = await promise;
+    const result = await debounced('foo');
 
     expect(result).toEqual('foo');
   });
@@ -75,5 +74,51 @@ describe('debouncePromise', () => {
     await sleep(20)
     expect(callCount).toEqual(1);
   });
-});
 
+  it('supports passing function as wait parameter', async () => {
+    let callCount = 0;
+    let getWaitCallCount = 0;
+
+    const debounced = debouncePromise(
+      async () => callCount++,
+      () => {
+        getWaitCallCount++
+        return 100
+      }
+    );
+
+    debounced()
+    debounced()
+    debounced()
+    await sleep(90);
+    expect(callCount).toEqual(0);
+    await sleep(20)
+    expect(getWaitCallCount).not.toEqual(0);
+    expect(callCount).toEqual(1);
+  })
+
+  it('calls the given function again if wait time has passed', async () => {
+    let callCount = 0
+    const debounced = debouncePromise(async () => callCount++, 10)
+    debounced()
+
+    await sleep(20);
+    expect(callCount).toEqual(1);
+
+    debounced()
+
+    await sleep(20)
+    expect(callCount).toEqual(2);
+  });
+
+  it('Converts the return value from the producer function to a promise', async () => {
+    let callCount = 0
+    const debounced = debouncePromise(() => ++callCount, 10)
+
+    debounced()
+    debounced()
+    await debounced()
+
+    expect(callCount).toEqual(1);
+  });
+});
