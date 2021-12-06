@@ -6,5 +6,6 @@ export interface Options {
    * @default false
    */
   leading?: boolean;
+
   accumulate?: boolean;
 }

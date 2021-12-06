@@ -1,17 +1,18 @@
 import { getWait, defer } from './utils';
-import { Options } from './types';
+import { Options, Wait } from './types';
 
 type Deferred = ReturnType<typeof defer>;
 
 /**
- * 创建一个防抖的Promise
+ * 创建一个去抖动版本的承诺返回函数
  * @param func 要防抖动的函数
  * @param wait 需要延迟的毫秒数
- * @param opts 选项对象
+ * @param opts.leading 指定在延迟开始前调用
+ * @param opts.accumulate 指定在延迟开始前调用
  */
 export function debouncePromise<T extends (...args: any[]) => any>(
   func: T,
-  wait: number = 0,
+  wait: Wait = 0,
   opts: Options = {},
 ) {
   let lastCallAt: number;
@@ -23,52 +24,48 @@ export function debouncePromise<T extends (...args: any[]) => any>(
     const currentWait = getWait(wait);
     const currentTime = new Date().getTime();
 
+    // @ts-ignore
+    const that = this;
+
     const isCold = !lastCallAt || (currentTime - lastCallAt) > currentWait;
 
     lastCallAt = currentTime;
 
     if (isCold && opts.leading) {
       return opts.accumulate
-        // @ts-ignore
-        ? Promise.resolve(func.call(this, [args])).then(result => result[0])
-        // @ts-ignore
-        : Promise.resolve(func.call(this, ...args))
+        ? Promise.resolve(func.call(that, [args])).then(result => result[0])
+        : Promise.resolve(func.call(that, ...args))
     }
 
-    if (deferred) {
-      clearTimeout(timer)
-    } else {
+    if (!deferred) {
       deferred = defer();
+    } else {
+      clearTimeout(timer);
     }
 
     pendingArgs.push(args);
-    // @ts-ignore
-    timer = setTimeout(flush.bind(this), currentWait);
+    timer = setTimeout(
+      () => {
+        clearTimeout(timer);
+
+        Promise.resolve(
+          opts.accumulate
+            ? func.call(that, pendingArgs)
+            : func.apply(that, pendingArgs[pendingArgs.length - 1])
+        )
+          .then(deferred!.resolve, deferred!.reject);
+
+        pendingArgs = []
+        deferred = null
+      },
+      currentWait
+    );
 
     if (opts.accumulate) {
       const argsIndex = pendingArgs.length - 1;
-       // @ts-ignore
-      return deferred.promise.then(results => results[argsIndex])
+      return deferred.promise.then((results: any) => results[argsIndex])
     }
 
     return deferred.promise;
-  }
-
-  function flush() {
-    const thisDeferred = deferred as Deferred;
-
-    clearTimeout(timer);
-
-    Promise.resolve(
-      opts.accumulate
-        // @ts-ignore
-        ? func.call(this, pendingArgs)
-        // @ts-ignore
-        : func.apply(this, pendingArgs[pendingArgs.length - 1])
-    )
-      .then(thisDeferred.resolve, thisDeferred.reject)
-
-    pendingArgs = []
-    deferred = null
   }
 }
