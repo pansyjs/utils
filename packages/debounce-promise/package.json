@@ -1,4 +1,17 @@
 {
   "name": "debounce-promise",
+  "version": "0.1.0",
+  "license": "MIT",
+  "description": "创建一个去抖动版本的承诺返回函数",
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "types": "es/index.d.ts",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
   "packageManager": "yarn@3.0.1"
 }
