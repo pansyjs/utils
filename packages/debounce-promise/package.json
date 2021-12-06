@@ -1,5 +1,5 @@
 {
-  "name": "debounce-promise",
+  "name": "@pansy/debounce-promise",
   "version": "0.1.0",
   "license": "MIT",
   "description": "创建一个去抖动版本的承诺返回函数",
