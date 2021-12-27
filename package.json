@@ -13,6 +13,7 @@
     "lint:commit": "walrus commitlint --env HUSKY_GIT_PARAMS",
     "readme": "node scripts/update-readme.js",
     "test:policy": "walrus test packages/policy",
+    "test:utility-regexps": "walrus-test packages/utility-regexps",
     "test:array-to-tree": "walrus-test packages/array-to-tree",
     "test:debounce-promise": "walrus-test packages/debounce-promise",
     "prerelease": "npm run build",

@@ -5,6 +5,14 @@ describe('idCardRegexp', () => {
     expect(idCardRegexp.test('142701199309095656')).toEqual(true);
   });
 
+  test('月不正确', () => {
+    expect(idCardRegexp.test('142701199313095656')).toEqual(false);
+  });
+
+  test('日不正确', () => {
+    expect(idCardRegexp.test('142701199312565656')).toEqual(false);
+  });
+
   test('合格的身份证号，最后一位x', () => {
     expect(idCardRegexp.test('14270119930909565X')).toEqual(true);
     expect(idCardRegexp.test('14270119930909565x')).toEqual(true);
