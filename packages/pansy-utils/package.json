@@ -1,6 +1,6 @@
 {
   "name": "@pansy/utils",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "小巧实用的工具类库",
   "main": "lib/index.js",
   "module": "es/index.js",
@@ -41,7 +41,7 @@
     "@pansy/replace-object-keys": "0.5.0",
     "@pansy/round": "0.5.0",
     "@pansy/url-utils": "0.5.0",
-    "@pansy/utility-regexps": "0.7.1",
+    "@pansy/utility-regexps": "0.7.2",
     "@pansy/utility-types": "0.5.0"
   },
   "publishConfig": {
