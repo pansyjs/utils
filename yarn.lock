@@ -4062,6 +4062,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@pansy/array-to-tree@workspace:packages/array-to-tree":
+  version: 0.0.0-use.local
+  resolution: "@pansy/array-to-tree@workspace:packages/array-to-tree"
+  dependencies:
+    "@pansy/is-function": 0.5.0
+    "@pansy/is-nil": 0.5.0
+  languageName: unknown
+  linkType: soft
+
+"@pansy/debounce-promise@workspace:packages/debounce-promise":
+  version: 0.0.0-use.local
+  resolution: "@pansy/debounce-promise@workspace:packages/debounce-promise"
+  languageName: unknown
+  linkType: soft
+
 "@pansy/delay@0.5.0, @pansy/delay@workspace:packages/delay":
   version: 0.0.0-use.local
   resolution: "@pansy/delay@workspace:packages/delay"
@@ -4277,7 +4292,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@pansy/utility-regexps@0.7.0, @pansy/utility-regexps@workspace:packages/utility-regexps":
+"@pansy/utility-regexps@0.7.2, @pansy/utility-regexps@workspace:packages/utility-regexps":
   version: 0.0.0-use.local
   resolution: "@pansy/utility-regexps@workspace:packages/utility-regexps"
   languageName: unknown
@@ -4324,7 +4339,7 @@ __metadata:
     "@pansy/replace-object-keys": 0.5.0
     "@pansy/round": 0.5.0
     "@pansy/url-utils": 0.5.0
-    "@pansy/utility-regexps": 0.7.0
+    "@pansy/utility-regexps": 0.7.2
     "@pansy/utility-types": 0.5.0
   languageName: unknown
   linkType: soft
@@ -4339,7 +4354,7 @@ __metadata:
     "@walrus/test": 1.3.0
     father-build: 1.20.4
     globby: 12.0.2
-    husky: 5.1.2
+    husky: 7.0.4
     typescript: 4.5.2
   languageName: unknown
   linkType: soft
@@ -10376,12 +10391,12 @@ fsevents@~2.1.2:
   languageName: node
   linkType: hard
 
-"husky@npm:5.1.2":
-  version: 5.1.2
-  resolution: "husky@npm:5.1.2"
+"husky@npm:7.0.4":
+  version: 7.0.4
+  resolution: "husky@npm:7.0.4"
   bin:
     husky: lib/bin.js
-  checksum: 0c4aa93defd7c81ce245b10d5a6c63a6deb3495cdcfa5ca9a91f1cecc1c12dba8aa30e97b29fb2861ea1036ec82fc9ea975b738ffc4d0f1a164774d4fea4cd95
+  checksum: c6ec4af63da2c9522da8674a20ad9b48362cc92704896cc8a58c6a2a39d797feb2b806f93fbd83a6d653fbdceb2c3b6e0b602c6b2e8565206ffc2882ef7db9e9
   languageName: node
   linkType: hard
 
