@@ -15,10 +15,20 @@ yarn add @pansy/number-precision
 
 ## 🔨 使用
 
-```
+```ts
 import NumberPrecision from '@pansy/number-precision';
 
-const np = NumberPrecision();
+const np = new NumberPrecision();
 
-np.add(0.1 + 0.2); // 0.3
+// 加法
+np.plus(0.1, 0.2); // 0.3
+
+// 乘法
+np.times(0.1, 10); // 1
+
+// 减法
+np.minus(0.2, 0.1); // 0.1
+
+// 除法
+np.divide(0.2, 0.1); // 2
 ```
