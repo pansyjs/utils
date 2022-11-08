@@ -4062,6 +4062,21 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@pansy/array-to-tree@workspace:packages/array-to-tree":
+  version: 0.0.0-use.local
+  resolution: "@pansy/array-to-tree@workspace:packages/array-to-tree"
+  dependencies:
+    "@pansy/is-function": 0.5.0
+    "@pansy/is-nil": 0.5.0
+  languageName: unknown
+  linkType: soft
+
+"@pansy/debounce-promise@workspace:packages/debounce-promise":
+  version: 0.0.0-use.local
+  resolution: "@pansy/debounce-promise@workspace:packages/debounce-promise"
+  languageName: unknown
+  linkType: soft
+
 "@pansy/delay@0.5.0, @pansy/delay@workspace:packages/delay":
   version: 0.0.0-use.local
   resolution: "@pansy/delay@workspace:packages/delay"
@@ -4277,7 +4292,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@pansy/utility-regexps@0.7.0, @pansy/utility-regexps@workspace:packages/utility-regexps":
+"@pansy/utility-regexps@0.7.2, @pansy/utility-regexps@workspace:packages/utility-regexps":
   version: 0.0.0-use.local
   resolution: "@pansy/utility-regexps@workspace:packages/utility-regexps"
   languageName: unknown
@@ -4324,7 +4339,7 @@ __metadata:
     "@pansy/replace-object-keys": 0.5.0
     "@pansy/round": 0.5.0
     "@pansy/url-utils": 0.5.0
-    "@pansy/utility-regexps": 0.7.0
+    "@pansy/utility-regexps": 0.7.2
     "@pansy/utility-types": 0.5.0
   languageName: unknown
   linkType: soft
@@ -12612,13 +12627,13 @@ fsevents@~2.1.2:
   linkType: hard
 
 "loader-utils@npm:^1.1.0":
-  version: 1.4.0
-  resolution: "loader-utils@npm:1.4.0"
+  version: 1.4.1
+  resolution: "loader-utils@npm:1.4.1"
   dependencies:
     big.js: ^5.2.2
     emojis-list: ^3.0.0
     json5: ^1.0.1
-  checksum: d150b15e7a42ac47d935c8b484b79e44ff6ab4c75df7cc4cb9093350cf014ec0b17bdb60c5d6f91a37b8b218bd63b973e263c65944f58ca2573e402b9a27e717
+  checksum: ea0b648cba0194e04a90aab6270619f0e35be009e33a443d9e642e93056cd49e6ca4c9678bd1c777a2392551bc5f4d0f24a87f5040608da1274aa84c6eebb502
   languageName: node
   linkType: hard
 
